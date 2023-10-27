@@ -391,9 +391,10 @@ Esta vista permite **editar los datos de los usuarios.** Por supuesto es solo ac
 
 En esta vista, el método para editar la información es diferentes. Aquí los datos **aparecen sobre 'inputs'**, de manera que al hacer clic sobre ellos, aparecerá el cursor de edición. Se pueden modificar todos los datos (en especial el '_estado_' y el '_rol_' del usuario) excepto el email.
 
-
 ## Test de usuarios inicial
+
 ### Primer Test de Usabilidad
+
 Tal y como hemos comentado en el apartado 'Diseño centrado en el usuario', una de las premisas de esta metodología consiste en realizar evaluaciones constantes para detectar los posibles problemas de usabilidad cuanto antes mejor. Por lo que una buena idea es realizar un primer test de usabilidad.
 
 Por el momento os adelanto que la técnica más utilizada par evaluar la usabilidad son los '**tests de usuario**'.
@@ -403,29 +404,31 @@ Estos consisten en crear una bateria de acciones que el usuario debe realizar, p
 Para este primer test hemos preparado las siguientes acciones:
 
 - Suponiendo que eres un **usuario no registrado**:
-    - Accede a la información general 'A cerca de' de esta web.
-    - Regístrate.
-    - Logueate.
-    - Modifica tu perfil añadiendo una imagen de avatar.
-    - Busca un proyecto llamado 'Tetris'.
-    - Accede al detalle de este proyecto.
-    - Cierra sesión.
+  - Accede a la información general 'A cerca de' de esta web.
+  - Regístrate.
+  - Logueate.
+  - Modifica tu perfil añadiendo una imagen de avatar.
+  - Busca un proyecto llamado 'Tetris'.
+  - Accede al detalle de este proyecto.
+  - Cierra sesión.
 - Suponiendo que eres un usuario con rol '**Desarrollador**':
-    - Crea un proyecto nuevo.
-    - Accede a la lista de tus proyectos.
-    - Muestra el detalle de tu nuevo proyecto.
-    - Edita tu proyecto cambiando la descripción.
-    - Borra tu proyecto.
+
+  - Crea un proyecto nuevo.
+  - Accede a la lista de tus proyectos.
+  - Muestra el detalle de tu nuevo proyecto.
+  - Edita tu proyecto cambiando la descripción.
+  - Borra tu proyecto.
 
 - Suponiendo que eres un usuario con rol '**Administrador**':
-    - Muestra la lista de proyectos.
-    - Borra un proyecto.
-    - Modifica el nombre de un proyecto.
-    - Muestra la listra de todos los usuarios registrados.
-    - Canvia el rol de uno de ellos.
-    - Modifica la imagen de su avatar.
+  - Muestra la lista de proyectos.
+  - Borra un proyecto.
+  - Modifica el nombre de un proyecto.
+  - Muestra la listra de todos los usuarios registrados.
+  - Canvia el rol de uno de ellos.
+  - Modifica la imagen de su avatar.
 
 ### Conclusiones y modificaciones
+
 De este primer test de usuario se desprenden las siguientes conclusiones:
 
 - La vista de proyectos en forma de **tabla no es muy atractiva.**
@@ -439,9 +442,29 @@ Para mejorar estos pequeños problemas de usabilidad vamos a tomar las siguiente
 Estos serían los bocetos actualizados:
 
 #### Vista de proyectos
-*Poner la imagen del los nuevos bocetos*
+
+_Poner la imagen del los nuevos bocetos_
 
 #### Vista del Panel de administraición de usuarios.
-*Poner la imagen del los nuevos bocetos*
+
+_Poner la imagen del los nuevos bocetos_
 
 Ahora que tenemos los bocetos creados y testeados, es el momento de pasar al siguiente nivel: **El diseño de los wireframes.**
+
+## Wireframe, mockup y guía de estilos
+
+En el apartado anterior hemos diseñado y testeado los bocetos para la versión 1.0 de nuestro proyecto.
+
+El siguiente paso, si nos basamos en el DCU (Diseño centrado en el usuario), sería diseñar los wireframes y, una vez tenemos los wireframes, los mockups junto a la guía de estilos.
+
+Un proyecto de mayor envergadura requeriría de un equipo de trabajo con más de un perfil. La tarea de diseñar la interficie corresponde, por un lado, al **arquitecto de la información** y por otro, a un **diseñador gráfico**.
+
+### Y nosotros, ¿necesitamos wireframe? ¿y mockup? ¿y guía de estilos?
+
+En nuestro caso, como el proyecto es muy básico, no nos vamos a centrar en aquellas tareas que corresponderían a un arquitecto de la información ni a un diseñador gráfico.
+
+El mapa web de nuestra aplicación se limita a dar acceso a los proyectos y la administración de los usuarios. Sería tan sencillo com este:
+
+En cuanto al diseño gráfico, aunque es una misión emocionante, nos vamos a limitar a trabajar con un **tema de bootstrap** utilizando **Bootswatch**, respetando, a priori, su paleta de colores y modificando, solo en algunos casos, algunos detalles como la fuente para los títulos.
+
+![Alt Guia de estilos](img/guiaestilos.png)
