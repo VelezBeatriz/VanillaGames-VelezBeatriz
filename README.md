@@ -1,5 +1,7 @@
 # Documentación
+
 ## Escenario del proyecto
+
 **Vanilla Games S.L.** es una empresa de desarrollo de **minijuegos para navegadores web**, creados con vanillaJS, es decir, desarrollados exclusivamente con **Javascript** como lenguaje de programación (sin frameworks)
 
 En esta empresa trabajan 10 desarrolladores y, habitualmente, suelen tener a tres alumnos/as en prácticas, de los cuales, al menos uno, tendrá muchas posibilidades de formar parte del equipo de desarrollo al acabar su etapa de formación.
@@ -36,16 +38,16 @@ Lo primero es definir los **casos de uso para esta versión.** Una primera aprox
 
 ### Casos de uso para la V1.0 - Definición básica
 
-1. **Registrar usuario**: Un usuario puede registrarse en la plataforma proporcionando su nombre, apellidos, email y contraseña. 
-2. **Recuperar contraseña**: Un usuario registrado puede solicitar la recuperación de su contraseña en caso de que la haya olvidado. Para ello, se le enviará un correo electrónico con las instrucciones para restablecer su contraseña. 
-3. **Iniciar sesión**: Un usuario registrado puede iniciar sesión en la plataforma proporcionando su email y contraseña. 
-4. **Cerrar sesión**: Un usuario puede cerrar su sesión en la plataforma en cualquier momento. 
-5. **Editar perfil**: Un usuario registrado puede editar su perfil, actualizando su nombre, apellidos, email o contraseña. 
-6. **Ver proyectos**: Un usuario registrado puede ver un listado de proyectos publicados por los desarrolladores. 
-7. **Publicar proyecto**: Un usuario con el perfil de desarrollador puede publicar un proyecto proporcionando información como nombre, descripción, imagen representativa, enlaces a servidor de pruebas y repositorio de código, estado del proyecto, etc. 
-8. **Editar proyecto**: Un usuario con el perfil de desarrollador puede editar un proyecto que haya publicado previamente, actualizando la información del proyecto. 
-9. **Eliminar proyecto**: Un usuario con el perfil de desarrollador puede eliminar un proyecto que haya publicado previamente. 
-10. **Ver/Editar usuarios**: Un adminsrador puede ver una tabla con todos los usuarios que hay registrados y editar la información, incluido el ROL de usuario. 
+1. **Registrar usuario**: Un usuario puede registrarse en la plataforma proporcionando su nombre, apellidos, email y contraseña.
+2. **Recuperar contraseña**: Un usuario registrado puede solicitar la recuperación de su contraseña en caso de que la haya olvidado. Para ello, se le enviará un correo electrónico con las instrucciones para restablecer su contraseña.
+3. **Iniciar sesión**: Un usuario registrado puede iniciar sesión en la plataforma proporcionando su email y contraseña.
+4. **Cerrar sesión**: Un usuario puede cerrar su sesión en la plataforma en cualquier momento.
+5. **Editar perfil**: Un usuario registrado puede editar su perfil, actualizando su nombre, apellidos, email o contraseña.
+6. **Ver proyectos**: Un usuario registrado puede ver un listado de proyectos publicados por los desarrolladores.
+7. **Publicar proyecto**: Un usuario con el perfil de desarrollador puede publicar un proyecto proporcionando información como nombre, descripción, imagen representativa, enlaces a servidor de pruebas y repositorio de código, estado del proyecto, etc.
+8. **Editar proyecto**: Un usuario con el perfil de desarrollador puede editar un proyecto que haya publicado previamente, actualizando la información del proyecto.
+9. **Eliminar proyecto**: Un usuario con el perfil de desarrollador puede eliminar un proyecto que haya publicado previamente.
+10. **Ver/Editar usuarios**: Un adminsrador puede ver una tabla con todos los usuarios que hay registrados y editar la información, incluido el ROL de usuario.
 11. **Eliminar usuario**: Un administrador puede eliminar cualquier usuario registrado en la plataforma.
 
 ### Diagrama de casos de uso
@@ -67,6 +69,7 @@ En el primer apartado **'Requisitos y diagrama de casos de uso'** para esta **ve
 Es el momento de ser más concretos y detenernos a reflexionar en cada uno de los procesos que se realizarán para cada tarea, incluyendo los posibles errores cometidos por el usuario o el propio sistema.
 
 ### Casos de uso específicos
+
 #### 1. Registrar usuario
 
 **Actores:** Usuario no registrado.
@@ -177,8 +180,8 @@ Es el momento de ser más concretos y detenernos a reflexionar en cada uno de lo
 **Flujos alternativos:**
 
 - 2a. El desarrollador decide no publicar el proyecto y selecciona la opción de cancelar.
-El sistema descarta la información ingresada en el formulario.
-El sistema muestra un mensaje de confirmación al desarrollador.
+  El sistema descarta la información ingresada en el formulario.
+  El sistema muestra un mensaje de confirmación al desarrollador.
 
 ### 7. Editar proyecto:
 
@@ -259,3 +262,46 @@ Vamos a repasar los diferentes casos de uso analizando el flujo principal y aña
 - **Error de autorización:** Si un usuario intenta realizar una acción que no está autorizada para realizar debido a su rol, **el sistema debería mostrar un mensaje de error indicando que la acción no está autorizada** y ofrecer la posibilidad de volver a la página anterior.
 
 - **Error de servidor:** En caso de que se produzca un error interno en el servidor, como una excepción no controlada, **el sistema debería mostrar un mensaje de error genérico indicando que se produjo un error** y ofrecer la posibilidad de volver a intentarlo o contactar con el soporte técnico.
+
+## Fases de desarrollo.
+
+Necesitamos organizarnos un poco. Vamos a planificar como vamos a llevar a cabo las diferentes fases para cumplir con nuestros objetivos:
+
+1. **Definición del proyecto y requisitos básicos:** En primer lugar debemos tener muy claro qué se espera de nuestra aplicación, por lo que anotaremos cada funcionalidad teniendo en cuanta los diferentes actores (roles de acceso).
+   _Esto es lo hemos hecho en el apartado anterior._
+2. **Definición de las versiones:**
+   Una vez conocemos los requisitos del proyecto, dividiremos el trabajo en diferentes versiones, de manera que todas ellas serán operativas, aunque cada una ampliando las funcionalidades.
+3. **Planificación del proyecto:**
+   Basandonos en la metodología Agile devidiremos todo el proceso en diferentes historias/tareas (para cada una de las versiones definidas) que: agruparemos, temporizaremos y representaremos mediante diagramas.
+4. **Diseño de la interficie:**
+   Basandonos en el diseño centrado en el usuario (DCU):
+5. Realizaremos un Benchmarking (para copiarnos de la competencia)
+6. Crearemos un modelo de usuarios
+7. Diseñaremos los prototipos de bajo nivel(bocetos, wireframes)
+8. Diseñaremos el mockup (prototipo de alto nivel) junto a la guía de estilos (usaremos la aplicación Figma)
+9. Haremos pruebas de usabilidad y rediseñaremos los prototipos.
+10. **Programación del frontend (html/css/js):**Maquetaremos los prototipos (html/css) y diseñaremos la lógica de validación de cliente
+11. **Programación del backend:**
+    Utilizaremos un backend como servicio (SUPABASE) para:
+12. Crear las bases de datos
+13. Diseñar consultas sql y funciones postgres
+14. Programaremos un ORM en javascript para el mapping de la bd.
+15. **Integración de frontend y backend en la aplicación:**
+16. Programaremos la SPA a partir de los prototipos
+17. Programaremos la lógica de acceso a la bd empleando el ORM
+18. Programaremos el resto de funcionalidades (sesiones y roles de acceso, etc)
+19. **Analisis usabilidad II:**
+    Haremos pruebas de usabilidad (test de usuarios) y solucionaremos los posibles conflictos detectados.
+20. **Testing y despliegue en producción:**
+21. Diseñaremos un sistema de testing para crear tests unitarios
+22. Configuraremos un entorno DevOps para trabajar con Integración continua y despliegue continuo (CI/CD)
+23. Desplegaremos en producción cada una de las versiones.
+
+## Versiones
+
+Vamos a dividir el desarrollo del proyecto en diferentes versiones a partir de las funcionalidades que podrá realizar:
+
+- **VERSIÓN 1.0:** Implementación de la publicación de proyectos
+- **VERSIÓN 2.0:** Implementación de los comentarios de los proyectos
+- **VERSIÓN 3.0:** Implementación del sistema de valoración mediante estrellas
+- **VERSIÓN 4.0:** Implementación del sistema de valoración basado en rúbricas o criterios de valoración.
