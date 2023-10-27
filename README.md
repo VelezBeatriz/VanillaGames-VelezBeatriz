@@ -280,7 +280,7 @@ Necesitamos organizarnos un poco. Vamos a planificar como vamos a llevar a cabo 
 - Diseñaremos los prototipos de bajo nivel(bocetos, wireframes)
 - Diseñaremos el mockup (prototipo de alto nivel) junto a la guía de estilos (usaremos la aplicación Figma)
 - Haremos pruebas de usabilidad y rediseñaremos los prototipos.
-5. **Programación del frontend (html/css/js):**Maquetaremos los prototipos (html/css) y diseñaremos la lógica de validación de cliente
+5. **Programación del frontend (html/css/js):** Maquetaremos los prototipos (html/css) y diseñaremos la lógica de validación de cliente
 6. **Programación del backend:**
     Utilizaremos un backend como servicio (SUPABASE) para:
 - Crear las bases de datos
