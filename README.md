@@ -392,28 +392,27 @@ Esta vista permite **editar los datos de los usuarios.** Por supuesto es solo ac
 En esta vista, el método para editar la información es diferentes. Aquí los datos **aparecen sobre 'inputs'**, de manera que al hacer clic sobre ellos, aparecerá el cursor de edición. Se pueden modificar todos los datos (en especial el '_estado_' y el '_rol_' del usuario) excepto el email.
 
 
-Test de usuarios inicial
-Primer Test de Usabilidad
+## Test de usuarios inicial
+### Primer Test de Usabilidad
 Tal y como hemos comentado en el apartado 'Diseño centrado en el usuario', una de las premisas de esta metodología consiste en realizar evaluaciones constantes para detectar los posibles problemas de usabilidad cuanto antes mejor. Por lo que una buena idea es realizar un primer test de usabilidad.
 
-Por el momento os adelanto que la técnica más utilizada par evaluar la usabilidad son los 'tests de usuario'.
+Por el momento os adelanto que la técnica más utilizada par evaluar la usabilidad son los '**tests de usuario**'.
 
 Estos consisten en crear una bateria de acciones que el usuario debe realizar, para detectar si existe algún problema en la interación con la aplicación. A continuación vamos pidiendo a un usuario focal (una persona que esté dentro del target de usuarios a quien va dirigida la app) que realice cada tarea, mostrandole los bocetos que aparecerán en cada interacción. Por ejemplo, si hace clic sobre el item de menú 'login' le mostraremos el boceto de la página 'login'.
 
 Para este primer test hemos preparado las siguientes acciones:
 
-Suponiendo que eres un usuario no registrado:
+- Suponiendo que eres un **usuario no registrado**:
+    - Accede a la información general 'A cerca de' de esta web.
+    - Regístrate.
+    - Logueate.
+    - Modifica tu perfil añadiendo una imagen de avatar.
+    - Busca un proyecto llamado 'Tetris'.
+    - Accede al detalle de este proyecto.
+    - Cierra sesión.
+    - Suponiendo que eres un usuario con rol 'Desarrollador':
 
-Accede a la información general 'A cerca de' de esta web.
-Regístrate.
-Logueate.
-Modifica tu perfil añadiendo una imagen de avatar.
-Busca un proyecto llamado 'Tetris'.
-Accede al detalle de este proyecto.
-Cierra sesión.
-Suponiendo que eres un usuario con rol 'Desarrollador':
-
-Crea un proyecto nuevo.
+- Crea un proyecto nuevo.
 Accede a la lista de tus proyectos.
 Muestra el detalle de tu nuevo proyecto.
 Edita tu proyecto cambiando la descripción.
