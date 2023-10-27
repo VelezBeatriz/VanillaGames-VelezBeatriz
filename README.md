@@ -286,13 +286,13 @@ Necesitamos organizarnos un poco. Vamos a planificar como vamos a llevar a cabo 
 - Crear las bases de datos
 - Diseñar consultas sql y funciones postgres
 - Programaremos un ORM en javascript para el mapping de la bd.
-6. **Integración de frontend y backend en la aplicación:**
+7. **Integración de frontend y backend en la aplicación:**
 - Programaremos la SPA a partir de los prototipos
 - Programaremos la lógica de acceso a la bd empleando el ORM
 - Programaremos el resto de funcionalidades (sesiones y roles de acceso, etc)
-7. **Analisis usabilidad II:**
+8. **Analisis usabilidad II:**
     Haremos pruebas de usabilidad (test de usuarios) y solucionaremos los posibles conflictos detectados.
-8. **Testing y despliegue en producción:**
+9. **Testing y despliegue en producción:**
 - Diseñaremos un sistema de testing para crear tests unitarios
 - Configuraremos un entorno DevOps para trabajar con Integración continua y despliegue continuo (CI/CD)
 - Desplegaremos en producción cada una de las versiones.
