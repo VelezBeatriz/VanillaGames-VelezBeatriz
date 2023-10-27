@@ -410,37 +410,38 @@ Para este primer test hemos preparado las siguientes acciones:
     - Busca un proyecto llamado 'Tetris'.
     - Accede al detalle de este proyecto.
     - Cierra sesión.
-    - Suponiendo que eres un usuario con rol 'Desarrollador':
+- Suponiendo que eres un usuario con rol '**Desarrollador**':
+    - Crea un proyecto nuevo.
+    - Accede a la lista de tus proyectos.
+    - Muestra el detalle de tu nuevo proyecto.
+    - Edita tu proyecto cambiando la descripción.
+    - Borra tu proyecto.
 
-- Crea un proyecto nuevo.
-Accede a la lista de tus proyectos.
-Muestra el detalle de tu nuevo proyecto.
-Edita tu proyecto cambiando la descripción.
-Borra tu proyecto.
-Suponiendo que eres un usuario con rol 'Administrador':
+- Suponiendo que eres un usuario con rol '**Administrador**':
+    - Muestra la lista de proyectos.
+    - Borra un proyecto.
+    - Modifica el nombre de un proyecto.
+    - Muestra la listra de todos los usuarios registrados.
+    - Canvia el rol de uno de ellos.
+    - Modifica la imagen de su avatar.
 
-Muestra la lista de proyectos.
-Borra un proyecto.
-Modifica el nombre de un proyecto.
-Muestra la listra de todos los usuarios registrados.
-Canvia el rol de uno de ellos.
-Modifica la imagen de su avatar.
-
-Conclusiones y modificaciones
+### Conclusiones y modificaciones
 De este primer test de usuario se desprenden las siguientes conclusiones:
 
-La vista de proyectos en forma de tabla no es muy atractiva.
-El usuario ha tenido dificultades a la hora de intentar modificar la imagen avatar de un usuario.
+- La vista de proyectos en forma de **tabla no es muy atractiva.**
+- El usuario ha tenido **dificultades a la hora de intentar modificar la imagen avatar** de un usuario.
+
 Para mejorar estos pequeños problemas de usabilidad vamos a tomar las siguientes acciones:
 
-En la vista de proyectos vamos crear un par de botones para poder alternar entre ver los proyectos en forma de tabla o en forma de tarjetas.
-En la vista de administración de usuarios, añadir un pequeño icono (un lápiz) sobre la imagen del avatar del usuario para que se intuya que, al hacer clic sobre la imagen, se accede a la ventana de modificación de perfil.
+- En la vista de proyectos vamos crear un par de botones para poder alternar entre ver los proyectos en forma de **tabla** o en forma de **tarjetas**.
+- En la vista de administración de usuarios, añadir un pequeño icono (un **lápiz**) sobre la imagen del avatar del usuario para que se intuya que, al hacer clic sobre la imagen, se accede a la ventana de modificación de perfil.
+
 Estos serían los bocetos actualizados:
 
-Vista de proyectos
-Poner la imagen del los nuevos bocetos
+#### Vista de proyectos
+*Poner la imagen del los nuevos bocetos*
 
-Vista del Panel de administraición de usuarios.
-Poner la imagen del los nuevos bocetos
+#### Vista del Panel de administraición de usuarios.
+*Poner la imagen del los nuevos bocetos*
 
-Ahora que tenemos los bocetos creados y testeados, es el momento de pasar al siguiente nivel: El diseño de los wireframes.
+Ahora que tenemos los bocetos creados y testeados, es el momento de pasar al siguiente nivel: **El diseño de los wireframes.**
