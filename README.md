@@ -275,27 +275,27 @@ Necesitamos organizarnos un poco. Vamos a planificar como vamos a llevar a cabo 
    Basandonos en la metodología Agile devidiremos todo el proceso en diferentes historias/tareas (para cada una de las versiones definidas) que: agruparemos, temporizaremos y representaremos mediante diagramas.
 4. **Diseño de la interficie:**
    Basandonos en el diseño centrado en el usuario (DCU):
-5. Realizaremos un Benchmarking (para copiarnos de la competencia)
-6. Crearemos un modelo de usuarios
-7. Diseñaremos los prototipos de bajo nivel(bocetos, wireframes)
-8. Diseñaremos el mockup (prototipo de alto nivel) junto a la guía de estilos (usaremos la aplicación Figma)
-9. Haremos pruebas de usabilidad y rediseñaremos los prototipos.
-10. **Programación del frontend (html/css/js):**Maquetaremos los prototipos (html/css) y diseñaremos la lógica de validación de cliente
-11. **Programación del backend:**
+- Realizaremos un Benchmarking (para copiarnos de la competencia)
+- Crearemos un modelo de usuarios
+- Diseñaremos los prototipos de bajo nivel(bocetos, wireframes)
+- Diseñaremos el mockup (prototipo de alto nivel) junto a la guía de estilos (usaremos la aplicación Figma)
+- Haremos pruebas de usabilidad y rediseñaremos los prototipos.
+5. **Programación del frontend (html/css/js):**Maquetaremos los prototipos (html/css) y diseñaremos la lógica de validación de cliente
+6. **Programación del backend:**
     Utilizaremos un backend como servicio (SUPABASE) para:
-12. Crear las bases de datos
-13. Diseñar consultas sql y funciones postgres
-14. Programaremos un ORM en javascript para el mapping de la bd.
-15. **Integración de frontend y backend en la aplicación:**
-16. Programaremos la SPA a partir de los prototipos
-17. Programaremos la lógica de acceso a la bd empleando el ORM
-18. Programaremos el resto de funcionalidades (sesiones y roles de acceso, etc)
-19. **Analisis usabilidad II:**
+- Crear las bases de datos
+- Diseñar consultas sql y funciones postgres
+- Programaremos un ORM en javascript para el mapping de la bd.
+6. **Integración de frontend y backend en la aplicación:**
+- Programaremos la SPA a partir de los prototipos
+- Programaremos la lógica de acceso a la bd empleando el ORM
+- Programaremos el resto de funcionalidades (sesiones y roles de acceso, etc)
+7. **Analisis usabilidad II:**
     Haremos pruebas de usabilidad (test de usuarios) y solucionaremos los posibles conflictos detectados.
-20. **Testing y despliegue en producción:**
-21. Diseñaremos un sistema de testing para crear tests unitarios
-22. Configuraremos un entorno DevOps para trabajar con Integración continua y despliegue continuo (CI/CD)
-23. Desplegaremos en producción cada una de las versiones.
+8. **Testing y despliegue en producción:**
+- Diseñaremos un sistema de testing para crear tests unitarios
+- Configuraremos un entorno DevOps para trabajar con Integración continua y despliegue continuo (CI/CD)
+- Desplegaremos en producción cada una de las versiones.
 
 ## Versiones
 
