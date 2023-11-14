@@ -8,6 +8,7 @@ tags:
 position: 
 
 ---
+# Documentación Sprint 1
 ## Comenzamos el SPRINT 2 - PROTOTIPOS
 
 Comenzamos el sprint 2 que incluye tres historias: La configuración del entorno de desarrollo, la maquetación de los bocetos y la implementación de la validación de los formularios.

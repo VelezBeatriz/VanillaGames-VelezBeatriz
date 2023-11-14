@@ -4,3 +4,4 @@
 
 - [Documentación - Spring 0](https://github.com/VelezBeatriz/VanillaGames/tree/documentacion/Sprint%200)
 - [Documentación - Spring 1](https://github.com/VelezBeatriz/VanillaGames/tree/documentacion/Sprint%201)
+- [Documentación - Spring 2](https://github.com/VelezBeatriz/VanillaGames-VelezBeatriz/tree/documentacion/Sprint%202)
