@@ -5,7 +5,7 @@ tags:
   - html
   - css
 sidebar_position: 2
----
+---# Documentación Sprint 2
 ## *HOME Versíón escritorio* 
 
 ![](/imagenes/v1/prototipos/home/home.png)

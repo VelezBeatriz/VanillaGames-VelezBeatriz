@@ -7,7 +7,7 @@ tags:
 sidebar_position: 1
 ---
 
-
+# Documentación Sprint 2
 ## Frameworks como marco de trabajo en Javascript
 No nos engañemos. En la mayoría de empresas de desarrollo web hacen trampas. Son pocas las que crean aplicaciones con html, css y javascript puro. La mayoría utilizar librerías que nos facilitan el trabajo. Es más, la casi todos os desarrolladores trabajan con lo que conocemos como frameworks.
 

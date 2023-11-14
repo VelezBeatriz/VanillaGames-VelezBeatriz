@@ -8,7 +8,7 @@ tags:
 sidebar_position: 1
 
 ---
-
+# Documentación Sprint 2
 
 En HTML5, podemos realizar validaciones en formularios utilizando atributos y elementos específicos. Aquí tienes un resumen de cómo vamos a crear validaciones utilizando HTML5:
 
