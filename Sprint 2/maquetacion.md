@@ -487,11 +487,11 @@ Aquí puedes ver el código utilizado: 👁‍🗨 ...
 
 ## *EDITAR PERFIL (MENÚ)* 
 
-![](/imagenes/v1/prototipos/editarPerfil/menu.png)
+![Alt Perfil](../img/html_perfil.png)
 
 ## *EDITAR PERFIL (Ventana MODAL)* 
 
-![](/imagenes/v1/prototipos/editarPerfil/edit.png)
+![Alt Modal del Perfil](../img/html_perfil2.png)
 
 
 ## Procedimiento
@@ -758,23 +758,23 @@ Aquí puedes ver el código utilizado: 👁‍🗨 ...
 
 ## *PROYECTOS Versíón escritorio* 
 
-![](/imagenes/v1/prototipos/proyectos/proyectos.png)
+![Alt Sección de proyectos](/imagenes/v1/prototipos/proyectos/proyectos.png)
 
 ## *MIS PROYECTOS Versíón escritorio con tabla* 
 
-![](/imagenes/v1/prototipos/proyectos/misproyectos.png)
+![Alt Sección de proyectos](/imagenes/v1/prototipos/proyectos/misproyectos.png)
 
 ## *MIS PROYECTOS Versíón adaptable I con tarjetas* 
 
-![](/imagenes/v1/prototipos/proyectos/misproyectos_responsive1.png)
+![Alt Sección de proyectos](/imagenes/v1/prototipos/proyectos/misproyectos_responsive1.png)
 
 ## *MIS PROYECTOS Versíón adaptable II con tarjetas* 
 
-![](/imagenes/v1/prototipos/proyectos/misproyectos_responsive2.png)
+![Alt Sección de proyectos](/imagenes/v1/prototipos/proyectos/misproyectos_responsive2.png)
 
 ## *PROYECTOS Versíón móvil* 
 
-![](/imagenes/v1/prototipos/proyectos/proyectos_movil.png)
+![Alt Sección de proyectos](/imagenes/v1/prototipos/proyectos/proyectos_movil.png)
 
 
 
@@ -1285,11 +1285,11 @@ Aquí puedes ver el código utilizado: 👁‍🗨 ...
 
 ## *DETALLE DEL PROYECTO Versíón escritorio* 
 
-![](/imagenes/v1/prototipos/proyectos/detalleProyecto.png)
+![Alt Sección de proyectos](/imagenes/v1/prototipos/proyectos/detalleProyecto.png)
 
 ## *DETALLE DEL PROYECTO Versíón móvil* 
 
-![](/imagenes/v1/prototipos/proyectos/detalleProyecto_movil.png)
+![Alt Sección de proyectos](/imagenes/v1/prototipos/proyectos/detalleProyecto_movil.png)
 
 
 ## Procedimiento
@@ -1416,9 +1416,9 @@ Aquí puedes ver el código utilizado: 👁‍🗨 ...
 			<div class="container">
 				<h1 class="mt-5">Detalle del proyecto</h1>
 				<div class="d-flex justify-content-end">
-					<bottom class="btn btn-outline-secondary mt-5">
+					<button class="btn btn-outline-secondary mt-5">
 						<i class="bi bi-arrow-bar-left" style="font-size: 1em;"></i>
-						Volver</bottom>
+						Volver</button>
 				</div>
 				
 				<div class="row mt-2">
@@ -1485,19 +1485,19 @@ Aquí puedes ver el código utilizado: 👁‍🗨 ...
 
 ## *NUEVO PROYECTO Versíón escritorio* 
 
-![](/imagenes/v1/prototipos/proyectos/nuevoProyecto.png)
+![Alt Sección de proyectos](/imagenes/v1/prototipos/proyectos/nuevoProyecto.png)
 
 ## *EDITAR PROYECTO Versíón escritorio* 
 
-![](/imagenes/v1/prototipos/proyectos/editProyecto.png)
+![Alt Sección de proyectos](/imagenes/v1/prototipos/proyectos/editProyecto.png)
 
 ## *NUEVO PROYECTO Versíón móvil* 
 
-![](/imagenes/v1/prototipos/proyectos/nuevoProyecto_movil.png)
+![Alt Sección de proyectos](/imagenes/v1/prototipos/proyectos/nuevoProyecto_movil.png)
 
 ## *EDITAR PROYECTO Versíón móvil* 
 
-![](/imagenes/v1/prototipos/proyectos/editProyecto_movil.png)
+![Alt Sección de proyectos](/imagenes/v1/prototipos/proyectos/editProyecto_movil.png)
 
 ## Procedimiento
 
@@ -1628,9 +1628,9 @@ Aquí puedes ver el código utilizado en ambas páginas: 👁‍🗨 ...
 			<div class="container">
 				<h1 class="mt-5">Nuevo proyecto</h1>
 				<div class="d-flex justify-content-end">
-					<bottom class="btn btn-outline-secondary mt-5">
+					<button class="btn btn-outline-secondary mt-5">
 						<i class="bi bi-arrow-bar-left" style="font-size: 1em"></i>
-						Volver</bottom
+						Volver</button
 					>
 				</div>
 
@@ -1809,9 +1809,9 @@ Aquí puedes ver el código utilizado en ambas páginas: 👁‍🗨 ...
 			<div class="container">
 				<h1 class="mt-5">Edición de proyecto</h1>
 				<div class="d-flex justify-content-end">
-					<bottom class="btn btn-outline-secondary mt-5">
+					<button class="btn btn-outline-secondary mt-5">
 						<i class="bi bi-arrow-bar-left" style="font-size: 1em"></i>
-						Volver</bottom
+						Volver</button>
 					>
 				</div>
 				<form action="" class="">
@@ -1931,11 +1931,11 @@ Aquí puedes ver el código utilizado en ambas páginas: 👁‍🗨 ...
 
 ## *ADMIN (Proyectos) Versíón escritorio* 
 
-![](/imagenes/v1/prototipos/admin/adminProyectos.png)
+![Alt Sección de proyectos](../img/html_perfil.png)
 
 ## *ADMIN (Usuarios) Versíón escritorio* 
 
-![](/imagenes/v1/prototipos/admin/adminUsuarios.png)
+![Alt Sección de proyectos](/imagenes/v1/prototipos/admin/adminUsuarios.png)
 
 
 
