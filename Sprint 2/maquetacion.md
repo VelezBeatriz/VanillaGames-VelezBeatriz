@@ -1,19 +1,11 @@
----
-title: Home
-tags:
-  - Bootstrap 5
-  - html
-  - css
-sidebar_position: 2
----# Documentación Sprint 2
+# Documentación Sprint 2
 ## *HOME Versíón escritorio* 
 
-![](/imagenes/v1/prototipos/home/home.png)
+![Alt Home](../img/html_home.png)
 
 ## *HOME Versíón móvil* 
 
-
-![](/imagenes/v1/prototipos/home/home_movil.png)
+![Alt Home Responsive](../img/html_homeresponsive.png)
 
 ## Entorno de desarrollo
 Vamos a comenzar a maquetar los prototipos para nuestro proyecto.
@@ -56,7 +48,7 @@ Algunos consejos para escribir tus commits:
 
 Aquí puedes ver el código utilizado: 👁‍🗨 ...
 
-<div style={{display: "none"}}>
+<div >
 
 ```html title="home.html"
 
@@ -227,7 +219,7 @@ Algunos consejos para escribir tus commits:
 
 Aquí puedes ver el código utilizado: 👁‍🗨 ...
 
-<div style={{display: "none"}}>
+<div >
 
 ```html title="registro.html"
 
@@ -401,7 +393,7 @@ Algunos consejos para escribir tus commits:
 
 Aquí puedes ver el código utilizado: 👁‍🗨 ...
 
-<div style={{display: "none"}}>
+<div >
 
 ```html title="registro.html"
 
@@ -593,7 +585,7 @@ Algunos consejos para escribir tus commits:
 
 Aquí puedes ver el código utilizado: 👁‍🗨 ...
 
-<div style={{display: "none"}}>
+<div >
 
 ```html title="editPerfil.html"
 
@@ -893,7 +885,7 @@ Algunos consejos para escribir tus commits:
    
 Aquí puedes ver el código utilizado: 👁‍🗨 ...
 
-<div style={{display: "none"}}>
+<div >
 
 ```html title="proyectos.html"
 
@@ -1426,7 +1418,7 @@ Algunos consejos para escribir tus commits:
    
 Aquí puedes ver el código utilizado: 👁‍🗨 ...
 
-<div style={{display: "none"}}>
+<div >
 
 ```html title="detalleProyecto.html"
 
@@ -1653,7 +1645,7 @@ Algunos consejos para escribir tus commits:
 
 Aquí puedes ver el código utilizado en ambas páginas: 👁‍🗨 ...
 
-<div style={{display: "none"}}>
+<div >
 
 ```html title="nuevoProyecto.html"
 
@@ -2106,7 +2098,7 @@ Algunos consejos para escribir tus commits:
 
 Aquí puedes ver el código utilizado: 👁‍🗨 ...
 
-<div style={{display: "none"}}>
+<div >
 
 ```html title="adminProyectos.html"
 
