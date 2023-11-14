@@ -164,22 +164,15 @@ Aquí puedes ver el código utilizado: 👁‍🗨 ...
 
 ```
 </div>
----
-title: Registro
-tags:
-  - Bootstrap 5
-  - html
-  - css
-sidebar_position: 3
----
+
 ## *REGISTRO Versíón escritorio* 
 
-![](/imagenes/v1/prototipos/registro/registro.png)
+![Alt Registro](../img/html_registro.png)
 
 ## *REGISTRO Versíón móvil* 
 
 
-![](/imagenes/v1/prototipos/registro/registro_movil.png)
+![Alt Registro Responsive](../img/html_registroresponsive.png)
 
 ## Procedimiento
 
@@ -325,22 +318,15 @@ Aquí puedes ver el código utilizado: 👁‍🗨 ...
 ```
 </div>
 
----
-title: Login
-tags:
-  - Bootstrap 5
-  - html
-  - css
-sidebar_position: 4
----
+
 ## *LOGIN Versíón escritorio* 
 
-![](/imagenes/v1/prototipos/login/login.png)
+![Alt Login](../img/html_login.png)
 
 ## *LOGIN Versíón móvil* 
 
 
-![](/imagenes/v1/prototipos/login/login_movil.png)
+![Alt Login Responsive](../img/html_loginresponsive.png)
 
 ## Procedimiento
 
@@ -498,14 +484,7 @@ Aquí puedes ver el código utilizado: 👁‍🗨 ...
 ```
 </div>
 
----
-title: Editar perfil
-tags:
-  - Bootstrap 5
-  - html
-  - css
-sidebar_position: 5
----
+
 ## *EDITAR PERFIL (MENÚ)* 
 
 ![](/imagenes/v1/prototipos/editarPerfil/menu.png)
@@ -777,14 +756,6 @@ Aquí puedes ver el código utilizado: 👁‍🗨 ...
 
 </div>
 
----
-title: Proyectos
-tags:
-  - Bootstrap 5
-  - html
-  - css
-sidebar_position: 6
----
 ## *PROYECTOS Versíón escritorio* 
 
 ![](/imagenes/v1/prototipos/proyectos/proyectos.png)
@@ -1311,14 +1282,7 @@ Aquí puedes ver el código utilizado: 👁‍🗨 ...
 
 </div>
 
----
-title: Detalle proyecto
-tags:
-  - Bootstrap 5
-  - html
-  - css
-sidebar_position: 7
----
+
 ## *DETALLE DEL PROYECTO Versíón escritorio* 
 
 ![](/imagenes/v1/prototipos/proyectos/detalleProyecto.png)
@@ -1518,14 +1482,7 @@ Aquí puedes ver el código utilizado: 👁‍🗨 ...
 ```
 </div>
 
----
-title: Nuevo proyecto y Editar proyecto
-tags:
-  - Bootstrap 5
-  - html
-  - css
-sidebar_position: 8
----
+
 ## *NUEVO PROYECTO Versíón escritorio* 
 
 ![](/imagenes/v1/prototipos/proyectos/nuevoProyecto.png)
@@ -1971,14 +1928,6 @@ Aquí puedes ver el código utilizado en ambas páginas: 👁‍🗨 ...
 
 ```
 </div>
----
-title: Admin Usuarios y Admin Proyectos
-tags:
-  - Bootstrap 5
-  - html
-  - css
-sidebar_position: 9
----
 
 ## *ADMIN (Proyectos) Versíón escritorio* 
 
