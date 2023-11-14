@@ -14,9 +14,6 @@ En primer lugar abre el VSCode y arrastra tu carpeta del proyecto. Si no recuerd
 
 Ahora deberías ver en la parte inferior izquierda de vscode el **nombre de la rama en la que estás situado**. Deberías estar en la rama `prototipos`, si no es así, puedes cambiar de rama haciendo clic (con el botón izquierdo) sobre el nombre de la rama.
 
-:::danger ¡Cuidado!
-Un error muy habitual es **olvidarnos de cambiar de rama** cuando comenzamos a trabajar. Ten cuidado ya que esto se puede convertir en un problema grave de organización, y podría ¡¡¡generar muchos dolores de cabeza 🥴!!!
-:::
 
 Si todo es correcto deberías ver en la columna izquierda la carpeta prototipos con un archivo `home.html` y un archivo `readme.md`.
 
@@ -32,19 +29,6 @@ Comenzamos a maquetar la página **home**. De manera resumida debemos seguir los
 2. Creamos la estructura de la web dentro del body con las etiquetas header, main y footer
 2. Copiamos el componente menú de la documentación de bootstrap (**navbar**) y lo modificamos para que se ajuste a nuestro prototipo. Lo usamos tanto en el header como en el footer.
 3. Creamos, en el main, un h1 y una imagen.
-
-
-:::warning ¡NO TE OLVIDES DEL COMMIT!
-Recuerda que mientras vas trabajando en el proyecto  debes ir guardando los cambios en Git y subirlos a github añadiendo cada vez un commit apropiado. Podrías empezar con algo así: 
-
-	Crea la estructura básica de la página HOME:
-  
-		Agrega el esqueleto HTML y los estilos iniciales para la página home.html
-
-Algunos consejos para escribir tus commits:
-
-👉[Buenas prácticas creando mensajes 'commit'](/blog/commit)👈
-:::
 
 Aquí puedes ver el código utilizado: 👁‍🗨 ...
 
@@ -204,18 +188,6 @@ Para maquetar la página `registro.html` podemos partir de la página `home.html
 De manera resumida debemos seguir los siguientes pasos:
 1. Modificamos la página home eliminando el botón *registro* del menú y el contenido de la etiqueta `main` excepto el h1 que modificaremos.
 2. Cremos un div con una anchura máxima usando el atributo `style` y dentro creamos un formulario con los campos correspondientes.
-
-:::warning ¡NO TE OLVIDES DEL COMMIT!
-Recuerda que mientras vas trabajando en el proyecto  debes ir guardando los cambios en Git y subirlos a github añadiendo cada vez un commit apropiado. Podrías empezar con algo así: 
-
-	Crea la estructura básica de la página xxx:
-  
-		Agrega el esqueleto HTML y los estilos iniciales para la página xxx.html
-
-Algunos consejos para escribir tus commits:
-
-👉[Buenas prácticas creando mensajes 'commit'](/blog/commit)👈
-:::
 
 Aquí puedes ver el código utilizado: 👁‍🗨 ...
 
@@ -378,18 +350,6 @@ De manera resumida debemos seguir los siguientes pasos:
 1. Modificamos la página home eliminando el botón *login* del menú y el contenido de la etiqueta `main` excepto el h1 que modificaremos.
 2. Creamos un div con una anchura máxima de 400px usando el atributo `style` y dentro creamos un formulario con los campos correspondientes.
 3. Finalmente añadimos un enlace para actualizar la contraseña y un botón para registrarte si no lo estás.
-
-:::warning ¡NO TE OLVIDES DEL COMMIT!
-Recuerda que mientras vas trabajando en el proyecto  debes ir guardando los cambios en Git y subirlos a github añadiendo cada vez un commit apropiado. Podrías empezar con algo así: 
-
-	Crea la estructura básica de la página xxx:
-  
-		Agrega el esqueleto HTML y los estilos iniciales para la página xxx.html
-
-Algunos consejos para escribir tus commits:
-
-👉[Buenas prácticas creando mensajes 'commit'](/blog/commit)👈
-:::
 
 Aquí puedes ver el código utilizado: 👁‍🗨 ...
 
@@ -570,18 +530,6 @@ De manera resumida debemos seguir los siguientes pasos:
 3. En el componente navbar del header
    1. Añadimos el **menú ROL** con el item PROYECTOS
    2. Añadimos el **menú USUARIO** con el item **Editar perfil**(entre otros). Este item será una copia del botón que permite abrir el modal.
-
-:::warning ¡NO TE OLVIDES DEL COMMIT!
-Recuerda que mientras vas trabajando en el proyecto  debes ir guardando los cambios en Git y subirlos a github añadiendo cada vez un commit apropiado. Podrías empezar con algo así: 
-
-	Crea la estructura básica de la página xxx:
-  
-		Agrega el esqueleto HTML y los estilos iniciales para la página xxx.html
-
-Algunos consejos para escribir tus commits:
-
-👉[Buenas prácticas creando mensajes 'commit'](/blog/commit)👈
-:::
 
 Aquí puedes ver el código utilizado: 👁‍🗨 ...
 
@@ -871,18 +819,6 @@ De manera resumida debemos seguir los siguientes pasos:
 5. Creamos un div con las tarjetas **card** correspondientes
 6. Creamos las versiones *responsive* para la vista de tarjetas.
 
-:::warning ¡NO TE OLVIDES DEL COMMIT!
-Recuerda que mientras vas trabajando en el proyecto  debes ir guardando los cambios en Git y subirlos a github añadiendo cada vez un commit apropiado. Podrías empezar con algo así: 
-
-	Crea la estructura básica de la página xxx:
-  
-		Agrega el esqueleto HTML y los estilos iniciales para la página xxx.html
-
-Algunos consejos para escribir tus commits:
-
-👉[Buenas prácticas creando mensajes 'commit'](/blog/commit)👈
-:::
-   
 Aquí puedes ver el código utilizado: 👁‍🗨 ...
 
 <div >
@@ -1404,18 +1340,6 @@ De manera resumida debemos seguir los siguientes pasos:
 5. Haremos que el ancho de las columnas varíe según la versión escritorio o móvil.
 6. Insertaremos un botón en la parte inferior derecha con posicionamiento absoluto 
 
-:::warning ¡NO TE OLVIDES DEL COMMIT!
-Recuerda que mientras vas trabajando en el proyecto  debes ir guardando los cambios en Git y subirlos a github añadiendo cada vez un commit apropiado. Podrías empezar con algo así: 
-
-	Crea la estructura básica de la página xxx:
-  
-		Agrega el esqueleto HTML y los estilos iniciales para la página xxx.html
-
-Algunos consejos para escribir tus commits:
-
-👉[Buenas prácticas creando mensajes 'commit'](/blog/commit)👈
-:::
-   
 Aquí puedes ver el código utilizado: 👁‍🗨 ...
 
 <div >
@@ -1630,18 +1554,6 @@ De manera resumida debemos seguir los siguientes pasos:
 5. Haremos que el ancho de las columnas varíe según la versión escritorio o móvil.
 
 Para maquetar la página `editProyecto.html` partiremos de la página `nuevoProyecto.html` y tan solo añadiremos el campo de la url de la imagen y cambiaremos título y botón 'Atualizar' 
-
-:::warning ¡NO TE OLVIDES DEL COMMIT!
-Recuerda que mientras vas trabajando en el proyecto  debes ir guardando los cambios en Git y subirlos a github añadiendo cada vez un commit apropiado. Podrías empezar con algo así: 
-
-	Crea la estructura básica de la página xxx:
-  
-		Agrega el esqueleto HTML y los estilos iniciales para la página xxx.html
-
-Algunos consejos para escribir tus commits:
-
-👉[Buenas prácticas creando mensajes 'commit'](/blog/commit)👈
-:::
 
 Aquí puedes ver el código utilizado en ambas páginas: 👁‍🗨 ...
 
@@ -2083,18 +1995,6 @@ sidebar_position: 9
 Para maquetar la página `adminProyectos.html` podemos partir de la página `Proyectos.html` pero utilizando el menú superior de un usuario registrado. 
 
 Para maquetar la página `adminUsuarios.html` podemos partir de la página `adminProyectos.html` insertando en las celdas de la tabla los inputs necesarios. 
-
-:::warning ¡NO TE OLVIDES DEL COMMIT!
-Recuerda que mientras vas trabajando en el proyecto  debes ir guardando los cambios en Git y subirlos a github añadiendo cada vez un commit apropiado. Podrías empezar con algo así: 
-
-	Crea la estructura básica de la página xxx:
-  
-		Agrega el esqueleto HTML y los estilos iniciales para la página xxx.html
-
-Algunos consejos para escribir tus commits:
-
-👉[Buenas prácticas creando mensajes 'commit'](/blog/commit)👈
-:::
 
 Aquí puedes ver el código utilizado: 👁‍🗨 ...
 
