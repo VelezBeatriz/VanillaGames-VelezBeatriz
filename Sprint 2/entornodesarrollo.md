@@ -31,38 +31,6 @@ Puedes tunear tu VSCode instalando diferentes temas. Para ello:
 - Desde el icono de configuración de vscode (la tuerquecita de abajo a la izquierda) selecciona '**Temas > Tema de color**'
 - Selecciona el tema que has instalado y... ¡ya lo tienes!
 
-:::tip 
-
-En este enlace puedes encontrar algunos temas para instalar en tu VSCode: [Themes VSCode](https://vscodethemes.com/?type=dark)
-
-Y aquí te dejo una tabla de algunos temas que nos recomienda el amigo 'Manz'
-<details>
-  <summary>Tabla de temas recomendados</summary>
-  
-  Estos son algunos de los temas que nos recomienda <a href="https://terminaldelinux.com/terminal/preparacion-entorno/instalar-vscode/">Manz</a>"
-
-
-    🌈 Flatland Monokai
-    👀 Enfocado Theme
-    🟡 Bluloco Dark Theme
-    🧔 Bearded Theme
-    🐼 Panda Theme
-    🟣 2077 Theme
-    🧛‍♀️ Dracula Dark Theme
-    💠 SynthWave 84
-    🤍 GitHub Light Theme
-    😸 Gatito Theme
-    💚 Vue Theme
-    ⚫ One Monokai Theme
-    🌃 Palenight Theme
-    👧 Doki Theme
-    🗻 Monokai Theme
-    🔵 Cobalt2 Theme
-    🐺 Winter is Coming
-</details>
-
-:::
-
 ### 1.3. Instala un tema de iconos, por ejemplo [VSCode Icons](https://marketplace.visualstudio.com/items?itemName=vscode-icons-team.vscode-icons) o [Material Icon](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
 
 Para instalar los iconos el proceso es el mismo:
@@ -203,9 +171,6 @@ Vamos a crear una rama exclusiva para el diseño de los prototipos y a subirla a
 4. Fijate que ahora en la parte inferior izquierda aparece el nombre de la rama actual en la que estás trabajando.
 5. Crea una carpeta en la raiz con nombre `prototipos`.
 6. Ahora vamos a crear el archivo `home.html` (de momento pon un h1 con el título y poco más)
-
-![Alt Img Entorno](../img/entorno9.png)
-
 7. Y hacemos un **commit** con el texto '*Prueba prototipo home*'. Te pedirá si quieres publicar la rama, dile que sí y haz **push** (sincronziar con github).
 8. Fíjate que ahora en github tienes las dos ramas, la rama `main`y la rama `prototipos`. En la rama main solo tienes el archivo `readme.md` pero en la rama `prototipos` ahora ya tienes la carpeta `prototipos`con el archivo `home.html`. 
    Es decir, ahora tienes un repositorio de tu proyecto pero con diferentes ramas que, por el momento, serán completamente independientes.
