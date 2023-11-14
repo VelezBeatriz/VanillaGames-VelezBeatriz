@@ -1,13 +1,5 @@
----
-title: Comenzamos a maquetar con Bootstrap
-tags:
-  - Bootstrap 5
-  - html
-  - css
-sidebar_position: 1
----
-
 # Documentación Sprint 2
+
 ## Frameworks como marco de trabajo en Javascript
 No nos engañemos. En la mayoría de empresas de desarrollo web hacen trampas. Son pocas las que crean aplicaciones con html, css y javascript puro. La mayoría utilizar librerías que nos facilitan el trabajo. Es más, la casi todos os desarrolladores trabajan con lo que conocemos como frameworks.
 
@@ -60,10 +52,6 @@ Svelte es un framework frontend basado en JavaScript que se diferencia por su en
 
 </details>
 
-:::note 
-*En este proyecto nosotros no vamos a utilizar ninguno de estros frameworks, ya que uno de los objetivos de esta documentación es poner en práctica los conocimientos adquiridos durante el ciclo, principalmente Javascript, que en definitiva es la base de todos estos marcos de trabajo.*
-:::
-
 ## Frameworks para la maquetación html/css
 Ahora bien, para la maquetación sí que vamos a utilizar un poco de ayuda 😅.
 
@@ -107,17 +95,7 @@ UIKit es un framework CSS que se enfoca en la creación de interfaces de usuario
 
 </details>
 
-
-
 Estos frameworks de diseño y bibliotecas pueden ser muy útiles para agilizar el proceso de desarrollo frontend al proporcionar estilos coherentes y componentes reutilizables. La elección del framework dependerá de tus preferencias de diseño, las necesidades de tu proyecto y cómo se adapte a tu flujo de trabajo. 
-
-:::note Bootstrap
-*Para nuestro proyecto nosotros utilizaremos **[Bootstrap](https://getbootstrap.com/)**, ya que, de momento, es el más utilizado en las empresas de desarrollo (al menos en el momento de escribir esta guía).*
-
-👉 Aquí tienes la **web oficial de la última versión de Bootstrap:** [https://getbootstrap.com/](https://getbootstrap.com)
-
-👉 Y aquí tienes un enlace a la **documentación de Booststrap 5 en español:** [https://getbootstrap.esdocu.com/](https://getbootstrap.esdocu.com/), de la mano de ['*esdocu*'](https://esdocu.com/) 
-:::
 
 ## ¡Maquetando prototipos!
 
