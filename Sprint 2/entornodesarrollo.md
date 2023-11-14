@@ -146,10 +146,6 @@ Pero antes vamos a crear un proyecto nuevo en VSCode, a continuación crearemos 
 ### Creando la rama principal
 1. Crea en tu carpeta de proyectos una carpeta con nombre `vanillagames10`
 2. Abre VSCode y arrástrala a la parte central de tu IDE
-
-  :::danger
-  Asegúrate de que has arrastrado la carpeta a la **ventana central** de VSCode. Si la arrastras a la columna de la izquierda tendrás varios proyectos abiertos a la vez, y podrías tener problemas cuando trabajes con tu repositorio. Yo te recomiendo que cada ventana de VSCode contenga tan solo un proyecto único.
-  :::
 3. Crea un **repositorio** para el proyecto.
 4. Crea el primer **commit** con el mensaje '*Commit principal*'
 5. Publica la rama con el mensaje '*Rama principal*'
