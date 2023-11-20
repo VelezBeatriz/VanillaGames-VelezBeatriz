@@ -1935,7 +1935,7 @@ Aquí puedes ver el código utilizado en ambas páginas: 👁‍🗨 ...
 
 ## *ADMIN (Usuarios) Versíón escritorio* 
 
-![Alt Sección de proyectos](/imagenes/v1/prototipos/admin/adminUsuarios.png)
+![Alt Sección de proyectos](/img/html_perfil2.png)
 
 
 
