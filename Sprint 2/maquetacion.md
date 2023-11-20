@@ -758,23 +758,23 @@ Aquí puedes ver el código utilizado: 👁‍🗨 ...
 
 ## *PROYECTOS Versíón escritorio* 
 
-![Alt Sección de proyectos](/imagenes/v1/prototipos/proyectos/proyectos.png)
+![Alt Sección de proyectos](/img/html_project.png)
 
 ## *MIS PROYECTOS Versíón escritorio con tabla* 
 
-![Alt Sección de proyectos](/imagenes/v1/prototipos/proyectos/misproyectos.png)
+![Alt Sección de proyectos](/img/html_project1.png)
 
 ## *MIS PROYECTOS Versíón adaptable I con tarjetas* 
 
-![Alt Sección de proyectos](/imagenes/v1/prototipos/proyectos/misproyectos_responsive1.png)
+![Alt Sección de proyectos](/img/html_project2.png)
 
 ## *MIS PROYECTOS Versíón adaptable II con tarjetas* 
 
-![Alt Sección de proyectos](/imagenes/v1/prototipos/proyectos/misproyectos_responsive2.png)
+![Alt Sección de proyectos](/img/html_project3.png)
 
 ## *PROYECTOS Versíón móvil* 
 
-![Alt Sección de proyectos](/imagenes/v1/prototipos/proyectos/proyectos_movil.png)
+![Alt Sección de proyectos](/img/html_project4.png)
 
 
 
@@ -1285,11 +1285,11 @@ Aquí puedes ver el código utilizado: 👁‍🗨 ...
 
 ## *DETALLE DEL PROYECTO Versíón escritorio* 
 
-![Alt Sección de proyectos](/imagenes/v1/prototipos/proyectos/detalleProyecto.png)
+![Alt Sección de proyectos](/img/html_project5.png)
 
 ## *DETALLE DEL PROYECTO Versíón móvil* 
 
-![Alt Sección de proyectos](/imagenes/v1/prototipos/proyectos/detalleProyecto_movil.png)
+![Alt Sección de proyectos](/img/html_project6.png)
 
 
 ## Procedimiento
@@ -1485,19 +1485,19 @@ Aquí puedes ver el código utilizado: 👁‍🗨 ...
 
 ## *NUEVO PROYECTO Versíón escritorio* 
 
-![Alt Sección de proyectos](/imagenes/v1/prototipos/proyectos/nuevoProyecto.png)
+![Alt Sección de proyectos](/img/html_project7.png)
 
 ## *EDITAR PROYECTO Versíón escritorio* 
 
-![Alt Sección de proyectos](/imagenes/v1/prototipos/proyectos/editProyecto.png)
+![Alt Sección de proyectos](/img/html_project8.png)
 
 ## *NUEVO PROYECTO Versíón móvil* 
 
-![Alt Sección de proyectos](/imagenes/v1/prototipos/proyectos/nuevoProyecto_movil.png)
+![Alt Sección de proyectos](/img/html_project9.png)
 
 ## *EDITAR PROYECTO Versíón móvil* 
 
-![Alt Sección de proyectos](/imagenes/v1/prototipos/proyectos/editProyecto_movil.png)
+![Alt Sección de proyectos](/img/html_project10.png)
 
 ## Procedimiento
 
@@ -1931,11 +1931,11 @@ Aquí puedes ver el código utilizado en ambas páginas: 👁‍🗨 ...
 
 ## *ADMIN (Proyectos) Versíón escritorio* 
 
-![Alt Sección de proyectos](../img/html_perfil.png)
+![Alt Sección de proyectos](/img/html_project11.png)
 
 ## *ADMIN (Usuarios) Versíón escritorio* 
 
-![Alt Sección de proyectos](/img/html_perfil2.png)
+![Alt Sección de proyectos](/img/html_project12.png)
 
 
 
