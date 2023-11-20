@@ -1,13 +1,3 @@
----
-title: Validaciones basadas en html
-tags:
-  - Bootstrap 5
-  - html
-  - css
-  - validaciones
-sidebar_position: 1
-
----
 # Documentación Sprint 2
 
 En HTML5, podemos realizar validaciones en formularios utilizando atributos y elementos específicos. Aquí tienes un resumen de cómo vamos a crear validaciones utilizando HTML5:
@@ -76,18 +66,6 @@ Vamos a definir las validaciones para cada formulario y a continuación modifica
   - La contraseña debe ser de 6 dígitos o más
 
 El código de este formulario sería algo así:
-
-:::warning ¡NO TE OLVIDES DEL COMMIT!
-Recuerda que mientras vas trabajando en el proyecto  debes ir guardando los cambios en Git y subirlos a github añadiendo cada vez un commit apropiado. Podrías empezar con algo así: 
-
-	Agrega reglas de validación html5 a los formularios de la página registro.html:
-  
-		Agrega los atributos required, minlength, etc a los inputs del formulario
-
-Algunos consejos para escribir tus commits:
-
-👉[Buenas prácticas creando mensajes 'commit'](/blog/commit)👈
-:::
 
 ```html title="formulario registro"
 <!-- Formulario de registro -->
@@ -485,13 +463,6 @@ Este sistema, aunque muy útil, presenta un problema: no todos los navegadores m
 
 Para evitar este inconveniente vamos a utilizar el sistema de validación de Bootstrap que, aunque no es perfecto (presenta algunos problemas de accesibilidad), mejorará el aspecto y control de los mensajes cuando el navegador nos informe de errores.
 
-:::info Validación con Bootstrap
-Puedes aprender más sobre la validación con Bootstrap aquí:
-
-👉 [https://getbootstrap.esdocu.com/docs/5.1/forms/validation/](https://getbootstrap.esdocu.com/docs/5.1/forms/validation/)
-
-:::
-
 ## ¿Cómo funciona? Formulario de inicio de sesión
 Para mostrar como funciona vamos a utilizar el formulario de inicio de sesión. Te muestro el código tal y como está ahora:
 
@@ -559,9 +530,6 @@ Para mostrar como funciona vamos a utilizar el formulario de inicio de sesión. 
   </div>
 
 ```
-:::tip
-También podemos añadir mensajes que se mostrarán **si el campo valida correctamente** usando la clase `valid-feedback`, pero nosotros no los vamos a necesitar.
-:::
 
 Ahora lo que haremos, mediante javascript, será: 
 1. Capturar el formulario en una variable
@@ -572,9 +540,6 @@ Ahora lo que haremos, mediante javascript, será:
 
 Este sería el código js resultante. Recuerda que debes incluirlo al final de la página, antes de de cerrar el body, mediante una etiqueta `<script>`
 
-:::danger ¡Recuerda!
-No te olvides del commit 😉
-:::
 
 ```html title="login.html"
 <!-- Script para la validación del formulario -->
