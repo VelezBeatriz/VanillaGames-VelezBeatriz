@@ -1,5 +1,7 @@
 # Documentación Sprint 2
 
+## Validaciones basadas en html
+
 En HTML5, podemos realizar validaciones en formularios utilizando atributos y elementos específicos. Aquí tienes un resumen de cómo vamos a crear validaciones utilizando HTML5:
 
 - Atributo **required**: Puedes usar el atributo required en campos de entrada para asegurarte de que el usuario complete ese campo antes de enviar el formulario.
@@ -443,20 +445,12 @@ Estas serían todas las validaciones utilizando las caracteristicas de html5.
 La respuesta del navegador cuando intentamos enviar un formulario con campos que no cumplen su condición establecida **difiere dependiendo del navegador**. 
 
 *Ejemplo de visualización de un formulario que no valida utilizando Google Chrome*
-![Validación según Chrome](/imagenes/v1/validaciones/validacionChrome.png)
+![Validación según Chrome](/img/validacion.png)
 
 Para evitar este problema podemos utilizar el **sistema de validación que nos ofrece Bootstrap.** Este sistema de validación implica **utilizar algo de javascript**, tal y como veremos en la siguiente tarea.
 
----
-title: Usando Bootstrap para la validación
-tags:
-  - Bootstrap 5
-  - html
-  - css
-  - validaciones
-sidebar_position: 2
+## Usando Bootstrap para la validación
 
----
 En el apartado anterior hemos definido las reglas de validación de nuestros formularios y hemos aplicado las restricciones utilizando propiedades de html5 en los diferentes campos.
 
 Este sistema, aunque muy útil, presenta un problema: no todos los navegadores muestran los mensajes de validación de la misma manera, y esto a veces puede interferir en el funcionamiento de nuestra aplicación.
@@ -561,6 +555,6 @@ Este sería el código js resultante. Recuerda que debes incluirlo al final de l
 ```
 Aquí puedes ver como se mostraría un error de validación usando este método:
 
-![](/imagenes/v1/validaciones/validacionChromeError.png)
+![Alt Validaciones HTML](/img/validacion2.png)
 
 Ahora solo nos faltaría aplicar este mísmo método a todos los formularios de nuestros prototipos html 😅. ¡Adelante!
