@@ -1,3 +1,1 @@
-# VanillaGames
-
-Proyecto guiado de Carlos Arrebola
+# VanillaGames - Prototipos
