@@ -1,4 +1,4 @@
-# Documentación Sprint 1 - Índice
+# Documentación Sprint 2 - Índice
 
 - [Entorno de desarrollo](https://github.com/VelezBeatriz/VanillaGames-VelezBeatriz/blob/documentacion/Sprint%202/entornodesarrollo.md)
 - [Prototipos en HTML](https://github.com/VelezBeatriz/VanillaGames-VelezBeatriz/blob/documentacion/Sprint%202/prototipohtml.md)
