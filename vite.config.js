@@ -1,9 +1,13 @@
-import path from 'path' // Para gestionar directorios
+import path from 'path'
 
 export default {
-  // Definimos la carpeta donde buscar cuando se carga la aplicación (donde estará el main.js)
-  root: path.resolve(__dirname, 'src'), 
-  
+  root: path.resolve(__dirname, 'src'), // Carpeta donde alojamos el archivo main.js
+  resolve: {
+    alias: {
+      '~bootstrap': path.resolve(__dirname, 'node_modules/bootstrap'),
+      '~bootswatch': path.resolve(__dirname, 'node_modules/bootswatch'),
+    }
+  },
   build: {
     rollupOptions: {
         /*
@@ -22,7 +26,7 @@ export default {
     minify: false, //( Si no se quiere minificar el build) https://vitejs.dev/config/#build-minify (aplica solo a los JS no CSS)
 },
   server: {
-    /*port: 8080, */ // Podemos definir el puerto de salida
+    /*port: 8080,*/  // Podemos definir el puerto de salida
     hot: true
   }
 }

@@ -99,6 +99,20 @@ o la versión separada
 `npm install bootswatch`
 
 ## Seguidamente añadiremos SASS
+
 Pero lo haremos como una dependencia instalada en desarrollo ya que en producción SASS no es necesario
 
 `npm i sass -D`
+
+Entonces crearemos una carpeta llamada SCSS dentro de src y añadiremos un archivo llamado `styles.scss`
+
+Seguidamente en `vite.config.js` deberemos añadir las lineas de dichas librerias:
+
+```
+ resolve: {
+    alias: {
+      '~bootstrap': path.resolve(__dirname, 'node_modules/bootstrap'),
+      '~bootswatch': path.resolve(__dirname, 'node_modules/bootswatch'),
+    }
+  }
+```
