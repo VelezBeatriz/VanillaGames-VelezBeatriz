@@ -1,5 +1,12 @@
-import { header } from './components/header'
-import { footer } from './components/footer'
+// Import all of Bootstrap's JS
+import 'bootstrap'
+
+// Import our custom CSS
+import './scss/style.scss'
+
+//Import our components
+import { header } from '@components/header'
+import { footer } from '@components/footer'
 
 // Importamos la vista por defecto (que será home)
 async function cargarVista () {
