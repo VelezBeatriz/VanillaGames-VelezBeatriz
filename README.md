@@ -116,3 +116,22 @@ Seguidamente en `vite.config.js` deberemos añadir las lineas de dichas libreria
     }
   }
 ```
+
+## Añadir Bootstrap en el scss
+
+```
+// Import all of Bootstrap's CSS
+@import "~bootswatch/dist/yeti/variables";
+@import "~bootstrap/scss/bootstrap";
+@import "~bootswatch/dist/yeti/bootswatch";
+```
+
+Y añadir los estilos en el main.js
+
+```
+// Import all of Bootstrap's JS
+import 'bootstrap'
+
+// Import our custom CSS
+import './scss/styles.scss'
+```
