@@ -89,3 +89,16 @@ export default {
   }
 }
 ```
+
+## Instalación Bootstrap, Bootswatch y SASS
+
+`npm i bootstrap bootswatch @popperjs/core`
+o la versión separada
+`npm install bootstrap`
+`npm install bootswatch`
+`npm install bootswatch`
+
+## Seguidamente añadiremos SASS
+Pero lo haremos como una dependencia instalada en desarrollo ya que en producción SASS no es necesario
+
+`npm i sass -D`
