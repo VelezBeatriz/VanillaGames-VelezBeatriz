@@ -6,6 +6,7 @@ export default {
     alias: {
       '~bootstrap': path.resolve(__dirname, 'node_modules/bootstrap'),
       '~bootswatch': path.resolve(__dirname, 'node_modules/bootswatch'),
+      '@components': path.resolve(__dirname, '/src/components')
     }
   },
   build: {
