@@ -1,3 +1,3 @@
-export const header = {
+export const footer = {
     template: `<p>footer</p>`
 }
