@@ -21,12 +21,22 @@ export default {
         main: path.resolve(__dirname, 'src/index.html') // Indicamos las páginas que debe analizar
       },
       output: {
-        dir: path.resolve(__dirname, 'dist'), // Donde se va a crear el build de nuestra aplicacion
-        format: 'es' // Formato de ES modules
+        dir: path.resolve(__dirname, 'dist'), // Donde se va a crear el build de nuestra aplicación
+        format: 'es', // Formato de ES modules
+        assetFileNames: (assetInfo) => {
+          let extType = assetInfo.name.split('.').at(1)
+          if (/png|jpe?g|svg|gif|tiff|bmp|ico/i.test(extType)) {
+            extType = 'img'
+          }
+          return `assets/${extType}/[name]-[hash][extname]`
+        },
+        chunkFileNames: 'assets/js/[name]-[hash].js',
+        entryFileNames: 'assets/js/[name]-[hash].js'
       }
     },
     outDir: path.resolve(__dirname, 'dist'),
     minify: true // ( Si no se quiere minificar el build) https://vitejs.dev/config/#build-minify (aplica solo a los JS no CSS)
+
   },
   publicDir: 'assets',
   server: {

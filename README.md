@@ -206,3 +206,21 @@ Seguidamente haremos un `npm run build` e iremos a comprobar que la página se p
 ## Añadir imagenes
 
 Desde la ruta `assets/images` y `publicDir: 'assets',` en `vite.config.js`
+
+## Para que en assets incluya el css y el js haremos lo siguiente:
+
+En [`vite.config.js`](https://stackoverflow.com/questions/71180561/vite-change-ouput-directory-of-assets)
+
+```js
+ assetFileNames: (assetInfo) => {
+          let extType = assetInfo.name.split('.').at(1);
+          if (/png|jpe?g|svg|gif|tiff|bmp|ico/i.test(extType)) {
+            extType = 'img';
+          }
+          return `assets/${extType}/[name]-[hash][extname]`;
+        },
+        2️⃣
+        chunkFileNames: 'assets/js/[name]-[hash].js',
+        3️⃣
+        entryFileNames: 'assets/js/[name]-[hash].js',
+```
