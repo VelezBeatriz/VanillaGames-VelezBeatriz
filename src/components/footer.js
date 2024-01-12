@@ -1,3 +1,3 @@
 export const footer = {
-    template: `<p>footer</p>`
+  template: '<p>footer</p>'
 }

@@ -186,3 +186,17 @@ build: {
 
 - **Crtl + Shift + P** y selecciono open user settings (JSON)
 - Añadiremos el código correspondiente que puedes encontrar en la siguiente [url](https://www.cesarguerra.mx/activar-autocorrecion-autoformato-de-eslint-al-guardar-un-archivo-en-vs-code/)
+
+## Despliegue continuo GitHub Pages
+
+Para ello usaremos el paquete `gh-pages` para ello usaremos el comando:
+
+```
+npm i gh-pages -D
+```
+
+Añadiremos el `script` en el `package.json`:
+
+```json
+"deploy": "gh-pages -d build"
+```

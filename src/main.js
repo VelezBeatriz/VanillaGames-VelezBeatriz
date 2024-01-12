@@ -4,7 +4,7 @@ import 'bootstrap'
 // Import our custom CSS
 import './scss/style.scss'
 
-//Import our components
+// Import our components
 import { header } from '@components/header'
 import { footer } from '@components/footer'
 
@@ -17,8 +17,8 @@ async function cargarVista () {
 }
 cargarVista()
 
-//Inyectamos el componente header
+// Inyectamos el componente header
 document.querySelector('header').innerHTML = header.template
 
-//Inyectamos el componente footer
+// Inyectamos el componente footer
 document.querySelector('footer').innerHTML = footer.template
