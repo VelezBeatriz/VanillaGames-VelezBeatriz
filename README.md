@@ -202,3 +202,7 @@ Añadiremos el `script` en el `package.json`:
 ```
 
 Seguidamente haremos un `npm run build` e iremos a comprobar que la página se publicó en la rama correspondiente
+
+## Añadir imagenes
+
+Desde la ruta `assets/images` y `publicDir: 'assets',` en `vite.config.js`
