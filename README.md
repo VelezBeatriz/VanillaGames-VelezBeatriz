@@ -200,3 +200,5 @@ Añadiremos el `script` en el `package.json`:
 ```json
 "deploy": "gh-pages -d build"
 ```
+
+Seguidamente haremos un `npm run build` e iremos a comprobar que la página se publicó en la rama correspondiente
