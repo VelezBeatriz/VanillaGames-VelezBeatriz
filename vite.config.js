@@ -2,6 +2,7 @@ import path from 'path'
 
 export default {
   root: path.resolve(__dirname, 'src'), // Carpeta donde alojamos el archivo main.js
+  base: './', //Es importante indicar la base de los archivos
   resolve: {
     alias: {
       '~bootstrap': path.resolve(__dirname, 'node_modules/bootstrap'),
@@ -10,6 +11,7 @@ export default {
     }
   },
   build: {
+    emptyOutDir: true, // Esto vaciará el directorio de salida antes de construir
     rollupOptions: {
         /*
             Opciones de configuración de Rollup externas, serán mergeadas con la configuracion
@@ -24,7 +26,7 @@ export default {
         },
     },
     outDir: path.resolve(__dirname, 'dist'),
-    minify: false, //( Si no se quiere minificar el build) https://vitejs.dev/config/#build-minify (aplica solo a los JS no CSS)
+    minify: true, //( Si no se quiere minificar el build) https://vitejs.dev/config/#build-minify (aplica solo a los JS no CSS)
 },
   server: {
     /*port: 8080,*/  // Podemos definir el puerto de salida
