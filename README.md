@@ -97,6 +97,7 @@ o la versión separada
 `npm install bootstrap`
 `npm install bootswatch`
 `npm install bootswatch`
+`npm i bootstrap-icons`
 
 ## Seguidamente añadiremos SASS
 
@@ -121,6 +122,8 @@ Seguidamente en `vite.config.js` deberemos añadir las lineas de dichas libreria
 
 ```js
 // Import all of Bootstrap's CSS
+$bootstrap-icons-font-dir: "../node_modules/bootstrap-icons/font/fonts";
+@import "bootstrap-icons/font/bootstrap-icons";
 @import "~bootswatch/dist/yeti/variables";
 @import "~bootstrap/scss/bootstrap";
 @import "~bootswatch/dist/yeti/bootswatch";
