@@ -189,7 +189,7 @@ build: {
 
 ## Despliegue continuo GitHub Pages
 
-Para ello usaremos el paquete `gh-pages` para ello usaremos el comando:
+Para ello usaremos el paquete [`gh-pages`](https://www.npmjs.com/package/gh-pages) para ello usaremos el comando:
 
 ```
 npm i gh-pages -D
@@ -198,7 +198,7 @@ npm i gh-pages -D
 Añadiremos el `script` en el `package.json`:
 
 ```json
-"deploy": "gh-pages -d build"
+"deploy": "gh-pages -d NombreCarpetaDeSalida"
 ```
 
 Seguidamente haremos un `npm run build` e iremos a comprobar que la página se publicó en la rama correspondiente
