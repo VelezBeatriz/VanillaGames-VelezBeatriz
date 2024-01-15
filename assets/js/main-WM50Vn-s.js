@@ -74,7 +74,7 @@
     <a href="#" class="nav-link">Vínculo header</a>
   </div>
 </nav>
-  `};async function mc(){const t=(await hi(()=>import("./proyectosVista-xJXZxf6s.js"),__vite__mapDeps([]),import.meta.url)).default;document.querySelector("main").innerHTML=t.template,t.script()}mc();document.querySelector("header").innerHTML=pc.template;document.querySelector("footer").innerHTML=_c.template;
+  `};async function mc(){const t=(await hi(()=>import("./homeVista-7hxPbJBn.js"),__vite__mapDeps([]),import.meta.url)).default;document.querySelector("main").innerHTML=t.template,t.script()}mc();document.querySelector("header").innerHTML=pc.template;document.querySelector("footer").innerHTML=_c.template;
 function __vite__mapDeps(indexes) {
   if (!__vite__mapDeps.viteFileDeps) {
     __vite__mapDeps.viteFileDeps = []
