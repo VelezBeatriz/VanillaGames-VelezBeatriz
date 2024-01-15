@@ -227,3 +227,42 @@ En [`vite.config.js`](https://stackoverflow.com/questions/71180561/vite-change-o
         3️⃣
         entryFileNames: 'assets/js/[name]-[hash].js',
 ```
+
+### Crear la lógica de las vistas
+
+Añade el código a las vistas:
+
+```js
+export default {
+  // html
+  template: `
+  ...
+  `,
+  script: () => {
+    console.log("vista registro cargada");
+    // Validación bootstrap
+
+    // Capturamos el formulario en una variable
+    const formulario = document.querySelector("#formRegistro");
+    // Detectamos su evento submit (enviar)
+    formulario.addEventListener("submit", (event) => {
+      // Detenemos el evento enviar (submit)
+      event.preventDefault();
+      event.stopPropagation();
+      // Comprobamos si el formulario no valida
+      if (!formulario.checkValidity()) {
+        // Y añadimos la clase 'was-validate' para que se muestren los mensajes
+        formulario.classList.add("was-validated");
+      }
+    });
+  },
+};
+```
+
+### Realiza un pull request
+
+Haz un pull request desde SPA a Main
+
+### Descargar la extensión 'Git Graph'
+
+Para acabar, vamos a utilizar una extensión de VSCode que nos permite visualizar la evolución de nuestro repositorio de forma gráfica.
