@@ -1,3 +1,4 @@
+import { enrutador } from './enrutador'
 export const header = {
   template: // html
   `
@@ -51,6 +52,8 @@ export const header = {
     </div>
   </div>
 </nav>
-
-  `
+  `,
+  script: () => {
+    enrutador.observadorRutas()
+  }
 }
