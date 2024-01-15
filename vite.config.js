@@ -8,7 +8,9 @@ export default {
       '~bootstrap': path.resolve(__dirname, 'node_modules/bootstrap'),
       '~bootswatch': path.resolve(__dirname, 'node_modules/bootswatch'),
       '~bootstrap-icons': path.resolve(__dirname, 'node_modules/bootstrap-icons'),
-      '@components': path.resolve(__dirname, 'src/components')
+      '@components': path.resolve(__dirname, 'src/components'),
+      '@views': path.resolve(__dirname, 'src/vistas')
+
     }
   },
   build: {

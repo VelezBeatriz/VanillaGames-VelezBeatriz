@@ -1,21 +1,21 @@
 export const enrutador = {
   rutas: {
-    home: import('./vistas/homeVista.js'),
+    home: import('@views/homeVista.js'),
     // Usuarios
-    adminUsuarios: import('./vistas/adminUsuarios.js'),
-    adminProyectos: import('./vistas/adminVista.js'),
-    registro: import('./vistas/registroVista.js'),
-    login: import('./vistas/loginVista.js'),
+    adminUsuarios: import('@views/adminUsuarios.js'),
+    adminProyectos: import('@views/adminVista.js'),
+    registro: import('@views/registroVista.js'),
+    login: import('@views/loginVista.js'),
     // Proyectos
-    proyectos: import('./vistas/proyectosVista.js'),
-    proyectoNuevo: import('./vistas/proyectoNuevoVista.js'),
-    proyectoEditar: import('./vistas/proyectoEditarVista.js'),
-    proyectoDetalle: import('./vistas/proyectoDetalleVista.js'),
-    404: import('./vistas/404.js')
+    proyectos: import('@views/proyectosVista.js'),
+    proyectoNuevo: import('@views/proyectoNuevoVista.js'),
+    proyectoEditar: import('@views/proyectoEditarVista.js'),
+    proyectoDetalle: import('@views/proyectoDetalleVista.js'),
+    404: import('@views/404.js')
   },
   observadorRutas: () => {
     // Capturamos los eventos click sobre el body
-    document.body.addEventListener('click', event => {
+    document.querySelector('body').addEventListener('click', event => {
       // Evitamos que se cargue la página
       const link = event.target
       if (link.classList.contains('router-link')) {

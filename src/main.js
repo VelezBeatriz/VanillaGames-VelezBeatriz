@@ -5,7 +5,7 @@ import 'bootstrap'
 import './scss/style.scss'
 
 // Importamos la Función para detectar eventos al cargar las vistas
-import { enrutador } from './componentes/enrutador'
+import { enrutador } from '@components/enrutador'
 
 // Import our components
 import { header } from '@components/header'
