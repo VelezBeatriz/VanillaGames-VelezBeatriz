@@ -8,14 +8,17 @@ export const header = {
   `
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
   <div class="container">
-  <a class="navbar-brand" href="#/home">
-  <img
-    src="images/logo.svg"
-    alt=""
-    width="30"
-    height="24"
-    class="d-inline-block align-text-top router-link"
-  />Vanilla Games</a>
+    <a class="navbar-brand router-link" href="#/home"
+      ><img
+        src="images/logo.svg"
+        alt=""
+        width="30"
+        height="24"
+        class="d-inline-block align-text-top"
+      />
+
+      Vanilla Games</a
+    >
     <button
       class="navbar-toggler"
       type="button"
@@ -28,48 +31,34 @@ export const header = {
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <!-- Menu común para todos los usuarios -->
-
       <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#/home">Home</a>
+          <a class="nav-link active router-link" aria-current="page" href="#/home">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="#">TOP5 Proyectos</a>
+          <a class="nav-link router-link" aria-current="page" href="#">TOP5 Proyectos</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="#">A cerca de</a>
+          <a class="nav-link router-link" aria-current="page" href="#" class="router-link">A cerca de</a>
         </li>
       </ul>
 
-        <!-- Aquí va el Menu rol -->
-        <div id="menuRol"></div>
-        <!-- Aquí va el Menu usuario -->
-        <div id="menuUsuario"></div>
+      <div id="menuRol"></div>
+      <div id="menuUsuario"></div>
     </div>
   </div>
 </nav>
-<div id="modal">
-<!-- Aquí inyectamos el componente editarPerfil -->
-</div>
+<div id="modal"></div>
+
   `,
   script: () => {
-    document.querySelector('#modal').innerHTML = editarPerfil.template
-    const rolUsuario = ls.getUsuario().rol
-    // console.log('este es el rol de usuario', rolUsuario)
     // Función de navegador
     enrutador.observadorRutas()
-    // Simulamos el inicio de sesión de un usuario
-    const usuario = {
-      email: 'manolito@email.com',
-      rol: 'registrado'
-    }
-    ls.setUsuario(usuario)
-    console.log('usuario guardado')
-
-    // Leemos el usuario del localstorage
-    const usuarioLogueado = ls.getUsuario()
-    console.log('usuario del localstorage: ', usuarioLogueado)
+    // Cargamos la ventana modal para editar perfil
+    document.querySelector('#modal').innerHTML = editarPerfil.template
+    // Y ejecutamos su lógica
+    editarPerfil.script()
+    const rolUsuario = ls.getUsuario().rol
 
     switch (rolUsuario) {
       case 'registrado':
@@ -93,9 +82,11 @@ export const header = {
       default : // Para usuarios anónimos
         // menú rol
         document.querySelector('#menuRol').innerHTML = menuRol.templateAnonimo
-        // menú usuario: No tiene
+        // menú usuario - No debe aparecer nada
+        document.querySelector('#menuUsuario').innerHTML = ''
         break
     }
+
     // Y actualizamos los datos de menu de usuario si es que se está mostrando
     try {
       // email y rol
@@ -121,5 +112,4 @@ export const header = {
       }
     })
   }
-
 }
