@@ -1,4 +1,5 @@
 import { proyectos } from '../bd/datosPruebas'
+import { ls } from '../components/funciones'
 export default {
   template: // html
     `
@@ -412,5 +413,16 @@ export default {
     // ####################################################################
 
     pintaTarjetas(proyectos)
+
+    // ####################################################################
+    // Mostrar/ocultar botón 'subir proyecto'
+    // ####################################################################
+
+    // Capturamos los datos del usuario logueado
+    const usuario = ls.getUsuario()
+    // Ocultamos el botón de subir proyecto si el rol es registrado
+    if (usuario.rol === 'registrado') {
+      document.querySelector('#botonSubirProyecto').classList.add('disabled')
+    }
   }
 }
