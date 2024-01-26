@@ -1,6 +1,7 @@
 import { enrutador } from './enrutador'
 import { ls } from './funciones'
 import { menuRol, menuUsuario } from './menus'
+import { editarPerfil } from './editPerfil'
 
 export const header = {
   template: // html
@@ -39,7 +40,18 @@ export const header = {
         <li class="nav-item">
           <a class="nav-link" aria-current="page" href="#">A cerca de</a>
         </li>
+        <li>
+        <a 
+        class="dropdown-item text-white" 
+        href="#"
+        data-bs-toggle="modal"
+        data-bs-target="#modalEditarPerfil"
+        >
+          Mi perfil
+        </a>
+      </li>
       </ul>
+
         <!-- Aquí va el Menu rol -->
         <div id="menuRol"></div>
         <!-- Aquí va el Menu usuario -->
@@ -47,8 +59,12 @@ export const header = {
     </div>
   </div>
 </nav>
+<div id="modal">
+<!-- Aquí inyectamos el componente editarPerfil -->
+</div>
   `,
   script: () => {
+    document.querySelector('#modal').innerHTML = editarPerfil.template
     const rolUsuario = ls.getUsuario().rol
     // console.log('este es el rol de usuario', rolUsuario)
     // Función de navegador
