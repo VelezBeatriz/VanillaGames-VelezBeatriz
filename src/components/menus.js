@@ -54,10 +54,19 @@ export const menuUsuario = {
             ${ls.getUsuario().rol}
           </li>
           <li><hr class="dropdown-divider" /></li>
-          <li><a class="dropdown-item" href="#">Mi perfil</a></li>
+          <li>
+          <a 
+          class="dropdown-item text-white" 
+          href="#"
+          data-bs-toggle="modal"
+          data-bs-target="#modalEditarPerfil"
+          >
+            Mi perfil
+          </a>
+          </li>
           <li><hr class="dropdown-divider" /></li>
-          <li><a class="dropdown-item" href="#">Cerrar sesión</a></li>
-        </ul>
+          <li><a class="dropdown-item cerrarSesion text-white" href="#">Cerrar sesión</a></li>
+          </ul>
       </li>
     </ul>
     `,

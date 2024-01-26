@@ -40,16 +40,6 @@ export const header = {
         <li class="nav-item">
           <a class="nav-link" aria-current="page" href="#">A cerca de</a>
         </li>
-        <li>
-        <a 
-        class="dropdown-item text-white" 
-        href="#"
-        data-bs-toggle="modal"
-        data-bs-target="#modalEditarPerfil"
-        >
-          Mi perfil
-        </a>
-      </li>
       </ul>
 
         <!-- Aquí va el Menu rol -->
@@ -72,7 +62,7 @@ export const header = {
     // Simulamos el inicio de sesión de un usuario
     const usuario = {
       email: 'manolito@email.com',
-      rol: 'admin'
+      rol: 'registrado'
     }
     ls.setUsuario(usuario)
     console.log('usuario guardado')
@@ -106,6 +96,30 @@ export const header = {
         // menú usuario: No tiene
         break
     }
+    // Y actualizamos los datos de menu de usuario si es que se está mostrando
+    try {
+      // email y rol
+      document.querySelector('#emailUserMenu').innerHTML = ls.getUsuario().email
+      document.querySelector('#rolUserMenu').innerHTML = ls.getUsuario().rol
+      // para la imagen de avatar (avatar.png si el campo está vacío)
+      const imagen = ls.getUsuario().avatar === '' ? 'images/avatar.svg' : ls.getUsuario().avatar
+      document.querySelector('#avatarMenu').setAttribute('src', imagen)
+    } catch (error) {
+      console.log('El usuario no está registrado y no tiene menú de usuario')
+    }
+
+    // Cerrar sesión
+    // Capturamos clic sobre el item de cerrar sesión
+    document.querySelector('header').addEventListener('click', (e) => {
+      if (e.target.classList.contains('cerrarSesion')) {
+        e.preventDefault()
+        // Borramos el localstorage
+        ls.setUsuario('')
+        // Cargamos la pagina home
+        window.location = '#/home'
+        header.script()
+      }
+    })
   }
 
 }

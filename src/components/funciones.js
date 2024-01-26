@@ -4,7 +4,7 @@ export const ls = {
   getUsuario: () => {
     // Definimos usuario anónimo por si no hay datos en localstorage
     let usuario = {
-      email: 'anónimo',
+      email: 'registrado',
       rol: 'no logueado',
       avatar: ''
     }
