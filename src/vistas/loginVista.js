@@ -16,11 +16,11 @@ export default {
             El formato del email no es correcto
           </div>
           <!-- Contraseña -->
-          <label for="pass" class="form-label mt-3">Contraseña:</label>
+          <label for="password" class="form-label mt-3">Contraseña:</label>
           <input
             required
-            id="pass"
-            name="pass"
+            id="password"
+            name="password"
             type="password"
             min="6"
             class="form-control"
@@ -82,7 +82,7 @@ export default {
     // Función para enviar datos a la bd
     function enviarDatos (formulario) {
       const email = formulario.email.value
-      const pass = formulario.pass.value
+      const pass = formulario.password.value
 
       // buscamos el indice del email en el array perfiles
       const indexUser = perfiles.findIndex((user) => user.email === email) // 1

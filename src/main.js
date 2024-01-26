@@ -10,6 +10,8 @@ import { enrutador } from '@components/enrutador'
 // Import our components
 import { header } from '@components/header'
 import { footer } from '@components/footer'
+import proyectosVista from './vistas/proyectosVista'
+import loginVista from './vistas/loginVista'
 
 // Importamos la vista por defecto (que será home)
 // async function cargarVista () {
