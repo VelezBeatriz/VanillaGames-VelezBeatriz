@@ -1,6 +1,6 @@
 import { proyectos, perfiles } from '../bd/datosPruebas'
 import { ls } from '../components/funciones'
-import { editarImagenPerfil } from '../componentes/editarImagenPerfil'
+import { editarImagenPerfil } from '../components/editarImagenPerfil'
 
 export default {
   template: // html
