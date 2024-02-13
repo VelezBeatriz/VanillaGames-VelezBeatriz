@@ -44,3 +44,18 @@ const supabase = createClient(supabaseUrl, supabaseKey)
 
 // Mostramos por consola la conexión establecida
 console.log('conexión', supabase)
+
+// Probamos la api de las tablas
+// función para Leer perfiles
+const leerPerfiles = async () => {
+  try {
+    const { data: perfiles, error } = await supabase
+      .from('perfiles')
+      .select('*')
+    console.log('perfiles', perfiles)
+  } catch (error) {
+    console.log(error)
+  }
+}
+// Ejecutamos la función
+await leerPerfiles()
