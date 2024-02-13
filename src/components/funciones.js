@@ -4,9 +4,9 @@ export const ls = {
   getUsuario: () => {
     // Definimos usuario anónimo por si no hay datos en localstorage
     let usuario = {
-      email: 'anònimo',
+      email: 'anónimo',
       rol: 'no logueado',
-      avatar: ''
+      avatar: 'images/imagenVacia.png'
     }
     // Capturamos datos de localstorage
     const usuarioJSON = localStorage.getItem('usuarioVanilla')
