@@ -1,3 +1,5 @@
+import { proyectos, perfiles } from '../bd/datosPrueba'
+import { ls } from '../componentes/funciones'
 export default {
   template: // html
       `
@@ -125,5 +127,43 @@ export default {
           </div>
       </div>
   </div>
-      `
+      `,
+      script: () =>{
+        // Capturamos los datos del usuario logueado
+const usuario = ls.getUsuario()
+
+// **** AQUI DEBEMOS CAPTURAR LOS PROYECTOS DE LA BASE DE DATOS ****
+
+// Capturamos proyectos y guardamos en variable para poder ser filtrada
+const datosProyectos = proyectos
+const datosUsuarios = perfiles
+
+// Definimos que por defecto se muestran 'proyectos'
+let selectUsuarios = true
+// *** Detectamos si se cambia de proyectos a usuarios al hacer click en las pestañas ***
+document.querySelector('.nav-tabs').addEventListener('click', (event) => {
+  if (event.target.classList.contains('fichaUsuarios')) {
+    // Si click en Usuarios cambiamos pestaña activa
+    document.querySelector('.fichaUsuarios').classList.add('active')
+    document.querySelector('.fichaProyectos').classList.remove('active')
+    selectUsuarios = true
+    console.log('tabusuarios')
+    document.querySelector('#tabUsuarios').classList.add('d-block')
+    document.querySelector('#tabUsuarios').classList.remove('d-none')
+    document.querySelector('#tabProyectos').classList.add('d-none')
+  } else {
+    // Si click en Proyectos cambiamos pestaña activa
+    document.querySelector('.fichaProyectos').classList.add('active')
+    document.querySelector('.fichaUsuarios').classList.remove('active')
+    selectUsuarios = false
+    console.log('tabProyectos')
+    document.querySelector('#tabProyectos').classList.add('d-block')
+    document.querySelector('#tabProyectos').classList.remove('d-none')
+    document.querySelector('#tabUsuarios').classList.add('d-none')
+  }
+  // Actualizamos los datos en el panel central
+  pintaProyectos(datosProyectos)
+  pintaUsuarios(datosUsuarios)
+})
+      }
 }

@@ -1,3 +1,13 @@
+// INSERT INTO proyectos (user_id, nombre, descripcion, imagen, enlace, repositorio, estado)
+// VALUES
+//   ('ec37a315-1fb2-41e7-bad1-3f8188a37bb2', 'Proyecto de Gestión de Inventario', 'Este proyecto permite gestionar el inventario de una empresa', 'https://imagen.com/gestion-inventario.jpg', 'https://enlace.com/gestion-inventario', 'https://github.com/proyecto-gestion-inventario', 'Activo'),
+//   ('ec37a315-1fb2-41e7-bad1-3f8188a37bb2', 'Proyecto de Gestión de Personal', 'Este proyecto permite gestionar el personal de una empresa', 'https://imagen.com/gestion-personal.jpg', 'https://enlace.com/gestion-personal', 'https://github.com/proyecto-gestion-personal', 'Inactivo'),
+//   ('ec37a315-1fb2-41e7-bad1-3f8188a37bb2', 'Proyecto de Análisis de Datos de Ventas', 'Este proyecto permite analizar los datos de ventas de una empresa', 'https://imagen.com/analisis-ventas.jpg', 'https://enlace.com/analisis-ventas', 'https://github.com/proyecto-analisis-ventas', 'Activo'),
+//   ('ec37a315-1fb2-41e7-bad1-3f8188a37bb2', 'Proyecto de Análisis de Redes Sociales', 'Este proyecto permite analizar las redes sociales de una empresa', 'https://imagen.com/analisis-redes-sociales.jpg', 'https://enlace.com/analisis-redes-sociales', 'https://github.com/proyecto-analisis-redes-sociales', 'Activo'),
+//   ('ec37a315-1fb2-41e7-bad1-3f8188a37bb2', 'Proyecto de Gestión de Proyectos', 'Este proyecto permite gestionar proyectos de una empresa', 'https://imagen.com/gestion-proyectos.jpg', 'https://enlace.com/gestion-proyectos', 'https://github.com/proyecto-gestion-proyectos', 'Inactivo'),
+//   ('ec37a315-1fb2-41e7-bad1-3f8188a37bb2', 'Proyecto de Visualización de Datos', 'Este proyecto permite visualizar datos de una empresa', 'https://imagen.com/visualizacion-datos.jpg', 'https://enlace.com/visualizacion-datos', 'https://github.com/proyecto-visualizacion-datos', 'Activo'),
+//   ('ec37a315-1fb2-41e7-bad1-3f8188a37bb2', 'Proyecto de Análisis de Datos de Marketing', 'Este proyecto permite analizar los datos de marketing de una empresa', 'https://imagen.com/analisis-marketing.jpg', 'https://enlace.com/analisis-marketing', 'https://github.com/proyecto-analisis-marketing', 'Inactivo');
+
 export const perfiles = [
   {
     id: 1,
