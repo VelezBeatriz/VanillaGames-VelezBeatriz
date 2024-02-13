@@ -59,3 +59,19 @@ const leerPerfiles = async () => {
 }
 // Ejecutamos la función
 await leerPerfiles()
+
+// Probamos a logearnos
+const login = async () => {
+  try {
+    // USER LOGIN
+    const { data, error } = await supabase.auth.signInWithPassword({
+      email: 'correo@correo.com',
+      password: 'contraseña'
+    })
+    console.log('login', data)
+  } catch (error) {
+    console.log(error)
+  }
+}
+
+await login()
