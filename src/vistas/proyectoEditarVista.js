@@ -1,12 +1,14 @@
+import { proyectos } from '../bd/datosPrueba'
+
 export default {
   template: // html
       `
       <div class="container">
       <h1 class="mt-5">Edición de proyecto</h1>
       <div class="d-flex justify-content-end">
-        <bottom class="btn btn-outline-secondary mt-5">
+        <button class="btn btn-outline-secondary mt-5">
           <i class="bi bi-arrow-bar-left" style="font-size: 1em"></i>
-          Volver</bottom
+          Volver</button
         >
       </div>
       <form novalidate action="" class="">

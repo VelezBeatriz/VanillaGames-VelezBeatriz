@@ -1,5 +1,5 @@
-import { proyectos } from '../bd/datosPruebas'
-import { ls } from '../components/funciones'
+import { proyectos } from '../bd/datosPrueba'
+import { ls } from '../componentes/funciones'
 
 export default {
   template: // html
@@ -113,6 +113,9 @@ export default {
 
     // Capturamos proyectos y guardamos en variable para poder ser filtrada
     const datos = proyectos
+    let misProyectos = false
+    // Capturamos los datos del usuario logueado
+    const usuario = ls.getUsuario()
 
     // ####################################################################
     // *** FUNCIÓN PARA PINTAR TABLA A PARTIR DE ARRAY datos ***
@@ -182,7 +185,7 @@ export default {
       // Si tenemos seleccionada la opción 'mis proyectos' filtramos los proyectos por user_id
       if (misProyectos) {
         proyectosFiltrados = datos.filter((proyecto) => proyecto.user_id === usuario.user_id)
-        console.log(proyectos)
+        // console.log(proyectos)
       }
       let tarjetasProyectos = ''
       // Iteramos para cada proyecto del array 'proyectosFiltrados'
@@ -235,7 +238,7 @@ export default {
               </div>
             </div>
           </div>
-        </div>
+        </div>  
         `
       })
       // inyectamos el resultado en tbody
@@ -271,7 +274,7 @@ export default {
 
     // Selección vista tarjetas
     document.querySelector('.vistaTarjetas').addEventListener('click', (boton) => {
-      console.log('vistaTarjetas')
+      // console.log('vistaTarjetas')
 
       // Pinta el boton de verde
       boton.target.classList.add('btn-success')
@@ -336,9 +339,6 @@ export default {
     // Vista 'Todos los proyectos' / 'Mis proyectos'
     // ####################################################################
 
-    // Definimos que por defecto se muestran 'mis proyectos'
-    let misProyectos = false
-
     // *** Detectamos si se cambia de proyectos a mis proyectos al hacer click en las pestañas ***
     document.querySelector('.nav-tabs').addEventListener('click', (event) => {
       // Si click en 'Mis proyectos' cambiamos pestaña activa
@@ -370,9 +370,6 @@ export default {
         // Capturamos el id de su dataset
         const id = boton.dataset.id
         if (boton.classList.contains('botonEditar')) {
-          // Si se trata de editar
-          console.log('Editar proyecto ' + id)
-
           // Cargamos la vista para editar proyecto pasandole como parámetro el id
           window.location = `#/proyectoEditar/${id}`
         } else if (boton.classList.contains('botonBorrar')) {
@@ -399,8 +396,6 @@ export default {
     // Mostrar/ocultar botón 'subir proyecto'
     // ####################################################################
 
-    // Capturamos los datos del usuario logueado
-    const usuario = ls.getUsuario()
     // Ocultamos el botón de subir proyecto si el rol es registrado
     if (usuario.rol === 'registrado') {
       document.querySelector('#botonSubirProyecto').classList.add('disabled')
