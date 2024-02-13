@@ -13,8 +13,8 @@ export const footer = {
       />
       FPLlefià
     </a>
-    <span class="navbar-text">@Texto de header</span>
-    <a href="#" class="nav-link">Vínculo header</a>
+    <span class="navbar-text">@Vanilla Games</span>
+    <a href="#" class="nav-link">Besis de Fresi</a>
   </div>
 </nav>
   `
