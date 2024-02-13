@@ -101,11 +101,11 @@ export default {
           header.script()
         } else {
           console.log('La contraseña no corresponde')
-          alert('El usuario no existe o la contraseña no es correcta')
+          alert('la contraseña no es correcta')
         }
       } else {
         console.log('El usuario no existe')
-        alert('El usuario no existe o la contraseña no es correcta')
+        alert('El usuario no existe')
       }
     }
   }
