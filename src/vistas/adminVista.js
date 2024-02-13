@@ -1,5 +1,5 @@
-import { proyectos, perfiles } from '../bd/datosPrueba'
-import { ls } from '../componentes/funciones'
+import { proyectos, perfiles } from '../bd/datosPruebas'
+import { ls } from '../components/funciones'
 export default {
   template: // html
       `

@@ -1,4 +1,4 @@
-import { proyectos } from '../bd/datosPrueba'
+import { proyectos } from '../bd/datosPruebas'
 
 export default {
   template: // html

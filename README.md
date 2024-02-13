@@ -36,8 +36,8 @@ Crearemos el html del index.html, el header, el footer y la vista de home.
 Seguidamente en el main añadiremos:
 
 ```js
-import { header } from "./componentes/header";
-import { footer } from "./componentes/footer";
+import { header } from "./components/header";
+import { footer } from "./components/footer";
 
 // Importamos la vista por defecto (que será home)
 async function cargarVista() {
