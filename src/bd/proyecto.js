@@ -4,7 +4,7 @@ import { supabase } from './supabase.js'
 // Definición de la clase Proyecto
 export class Proyecto {
   // Constructor que inicializa las propiedades del proyecto
-  constructor({
+  constructor ({
     id = null, // ID único del proyecto
     created_at = null, // Fecha de publicación del proyecto
     user_id = null, // ID del usuario que ha creado el proyecto
@@ -28,7 +28,7 @@ export class Proyecto {
   }
 
   // Método estático para obtener todos los proyectos
-  static async getAll() {
+  static async getAll () {
     // Realiza una consulta a la base de datos para obtener todos los proyectos
     const { data: proyectos, error } = await supabase
       .from('proyectos')
@@ -45,7 +45,7 @@ export class Proyecto {
   }
 
   // Método estático para obtener un Proyecto por su ID
-  static async getById(id) {
+  static async getById (id) {
     // Realiza una consulta para obtener un Proyecto por su ID
     const { data: proyecto, error } = await supabase
       .from('proyectos')
@@ -63,7 +63,7 @@ export class Proyecto {
   }
 
   // Método estático para obtener un Proyecto por el ID del usuario asociado
-  static async getByUserId(id) {
+  static async getByUserId (id) {
     // Realiza una consulta para obtener un Proyecto por el ID de usuario asociado
     const { data: proyecto, error } = await supabase
       .from('proyectos')
@@ -81,7 +81,7 @@ export class Proyecto {
   }
 
   // Método estático para crear un nuevo Proyecto
-  static async create(proyectoData) {
+  static async create (proyectoData) {
     // Inserta un nuevo Proyecto en la base de datos con los datos proporcionados
     const { data, error } = await supabase
       .from('proyectos')
@@ -98,7 +98,7 @@ export class Proyecto {
   }
 
   // Método estático para actualizar un Proyecto existente por su ID
-  static async update(id, newData) {
+  static async update (id, newData) {
     // Actualiza un Proyecto existente en la base de datos con los nuevos datos
     const { error } = await supabase
       .from('proyectos')

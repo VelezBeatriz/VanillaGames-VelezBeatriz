@@ -27,6 +27,7 @@ import { createClient } from '@supabase/supabase-js'
 // cargarVista()
 
 // Inyectamos el componente header
+
 document.querySelector('header').innerHTML = header.template
 header.script()
 
@@ -35,3 +36,7 @@ document.querySelector('footer').innerHTML = footer.template
 enrutador.observadorRutas()
 // Cargamos la página home
 window.location = '#/home'
+
+// // Probando la clase Pefil
+// const resultado = await Perfil.getAll()
+// console.log(resultado)
