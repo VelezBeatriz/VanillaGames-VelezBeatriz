@@ -23,12 +23,12 @@ describe('Pruebas para la Clase User', function () {
     it('debería iniciar sesión de un usuario existente', async function () {
       expect(usuarioCreado).to.be.an.instanceOf(User)
 
-      const datosLogin = { email: 'test@example.com', password: 'testPassword' }
+      const datosLogin = { email: 'velezsanchezbeatriz@fpllefia.com', password: 'aA123456789!' } // Este usuario si existe en la database a ver si lo puede comprobar
 
       const usuarioLogueado = await User.login(datosLogin)
 
       expect(usuarioLogueado).to.be.an.instanceOf(User)
-      expect(usuarioLogueado.email).to.equal('test@example.com')
+      expect(usuarioLogueado.email).to.equal('velezsanchezbeatriz@fpllefia.com')
     })
   })
 
@@ -42,7 +42,7 @@ describe('Pruebas para la Clase User', function () {
       expect(usuarioLogueado).to.be.an.instanceOf(User) // Verificamos que sea una instancia de User
 
       // Verificamos la propiedad 'email' del usuario logueado
-      expect(usuarioLogueado.email).to.equal('test@example.com') // Reemplaza 'correo@example.com' con el email esperado del usuario logueado
+      expect(usuarioLogueado.email).to.equal('velezsanchezbeatriz@fpllefia.com') // Reemplaza 'correo@example.com' con el email esperado del usuario logueado
     })
   })
 
