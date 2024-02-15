@@ -10,7 +10,7 @@ import { Proyecto } from '../src/bd/proyecto.js'
 import { Perfil } from '../src/bd/perfil.js'
 
 describe('getById()', function () {
-  it('debería devolver el proyecto con el ID correspondiente', async function () {
+  it('debería devolver la persona con el ID correspondiente', async function () {
     // Obtener el proyecto por ID
     const perfil = await Perfil.getById(1)
     // Esperamos que el nombre coincida
