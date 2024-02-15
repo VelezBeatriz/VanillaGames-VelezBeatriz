@@ -14,7 +14,7 @@ describe('getById()', function () {
     // Obtener el proyecto por ID
     const perfil = await Perfil.getById(1)
     // Esperamos que el nombre coincida
-    expect(perfil.nombre).equal('Marc')
+    expect(perfil.nombre).equal('Paco') // Mi primer id en perfiles se llama Paco
   })
 })
 
@@ -23,6 +23,6 @@ describe('getById()', function () {
     // Obtener el proyecto por ID
     const proyecto = await Proyecto.getById(1)
     // Esperamos que el nombre coincida
-    expect(proyecto.nombre).equal('Proyecto de Gestión de Inventario')
+    expect(proyecto.nombre).equal('Proyecto de Gestión de Inventario') // Esta está correcto
   })
 })

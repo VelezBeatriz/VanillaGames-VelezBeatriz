@@ -10,8 +10,8 @@ import { Proyecto } from '../src/bd/proyecto.js'
 describe('getById()', function () {
   it('debería devolver el nombre del proyecto con el ID correspondiente', async function () {
     // Obtener el proyecto por ID
-    const proyecto = await Proyecto.getById(1)
+    const proyecto = await Proyecto.getById(2)
     // Esperamos que el nombre coincida
-    expect(proyecto.nombre).equal('Proyecto de Gestión de Inventario')
+    expect(proyecto.nombre).equal('Proyecto de Gestión de Personal') // Por comrpobar si funciona correctamente
   })
 })
