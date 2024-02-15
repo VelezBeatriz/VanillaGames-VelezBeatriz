@@ -40,6 +40,11 @@ export class Proyecto {
       throw new Error(error.message)
     }
 
+    // Verifica si se encontraron proyectos
+    if (proyectos.length === 0) {
+      throw new Error('No se encontró ningún proyecto con el ID')
+    }
+
     // Mapea los proyectos obtenidos a instancias de la clase Proyecto y los devuelve
     return proyectos.map((Proyecto) => new Proyecto(Proyecto))
   }
