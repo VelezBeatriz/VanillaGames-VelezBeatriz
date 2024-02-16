@@ -5,7 +5,7 @@ import { expect } from 'chai'
 import { supabase } from '../src/bd/supabase.js'
 
 // Cargamos la clase Perfil
-import { Proyecto } from '../src/bd/proyecto.js'
+import { Proyectos } from '../src/bd/proyecto.js'
 
 import { Perfil } from '../src/bd/perfil.js'
 

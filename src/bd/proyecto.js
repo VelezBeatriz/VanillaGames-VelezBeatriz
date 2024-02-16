@@ -2,7 +2,7 @@
 import { supabase } from './supabase.js'
 
 // Definición de la clase Proyecto
-export class Proyecto {
+export class Proyectos {
   // Constructor que inicializa las propiedades del proyecto
   constructor ({
     id = null, // ID único del proyecto
@@ -46,7 +46,7 @@ export class Proyecto {
     }
 
     // Mapea los proyectos obtenidos a instancias de la clase Proyecto y los devuelve
-    return proyectos.map((Proyecto) => new Proyecto(Proyecto))
+    return proyectos.map((Proyecto) => new Proyectos(Proyecto))
   }
 
   // Método estático para obtener un Proyecto por su ID
@@ -64,7 +64,7 @@ export class Proyecto {
     }
 
     // Devuelve una instancia de Proyecto con la información obtenida
-    return new Proyecto(proyecto)
+    return new Proyectos(proyecto)
   }
 
   // Método estático para obtener un Proyecto por el ID del usuario asociado
@@ -82,7 +82,7 @@ export class Proyecto {
     }
 
     // Devuelve una instancia de Proyecto con la información obtenida
-    return new Proyecto(proyecto)
+    return new Proyectos(proyecto)
   }
 
   // Método estático para crear un nuevo Proyecto
@@ -99,7 +99,7 @@ export class Proyecto {
     }
 
     // Si se insertaron datos, devuelve una nueva instancia de Proyecto con los datos insertados
-    return data ? new Proyecto(data[0]) : null
+    return data ? new Proyectos(data[0]) : null
   }
 
   // Método estático para actualizar un Proyecto existente por su ID
