@@ -10,12 +10,12 @@ describe('Pruebas para la Clase User', function () {
 
   describe('create()', function () {
     it('debería crear un nuevo usuario', async function () {
-      const datosUsuario = { email: 'test@example.com', password: 'testPassword' }
+      const datosUsuario = { email: 'test4234242@example.com', password: 'testPassword' }
 
       usuarioCreado = await User.create(datosUsuario)
 
       expect(usuarioCreado).to.be.an.instanceOf(User)
-      expect(usuarioCreado.email).to.equal('test@example.com')
+      expect(usuarioCreado.email).to.equal('test4234242@example.com')
     })
   })
 

@@ -21,7 +21,7 @@ describe('getById()', function () {
 describe('getById()', function () {
   it('debería devolver el proyecto con el ID correspondiente', async function () {
     // Obtener el proyecto por ID
-    const proyecto = await Proyecto.getById(1)
+    const proyecto = await Proyectos.getById(1)
     // Esperamos que el nombre coincida
     expect(proyecto.nombre).equal('Proyecto de Gestión de Inventario') // Esta está correcto
   })

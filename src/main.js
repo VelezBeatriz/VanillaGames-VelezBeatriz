@@ -41,11 +41,11 @@ window.location = '#/home'
 // const resultado = await Perfil.getAll()
 // console.log(resultado)
 
-const supabaseUrl = 'https://hndfwklbheorppxgouys.supabase.co'
-const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhuZGZ3a2xiaGVvcnBweGdvdXlzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDY4NjgyMzQsImV4cCI6MjAyMjQ0NDIzNH0.KSmZeBzCgadaRKW5SWHrjh_Nj6UvplQxV6WY_VKC2vA'
-const supabase = createClient(supabaseUrl, supabaseKey)
+// const supabaseUrl = 'https://hndfwklbheorppxgouys.supabase.co'
+// const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhuZGZ3a2xiaGVvcnBweGdvdXlzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDY4NjgyMzQsImV4cCI6MjAyMjQ0NDIzNH0.KSmZeBzCgadaRKW5SWHrjh_Nj6UvplQxV6WY_VKC2vA'
+// const supabase = createClient(supabaseUrl, supabaseKey)
 
-export { supabase }
+// export { supabase }
 
 // Mostramos por consola la conexión establecida
 // console.log('conexión', supabase)
@@ -66,7 +66,7 @@ export { supabase }
 // if (error) console.error(error)
 // else console.log(data)
 
-const { data, error } = await supabase
-  .rpc('perfil_detalle_todos')
-if (error) console.error(error)
-else console.log(data)
+// const { data, error } = await supabase
+//   .rpc('perfil_detalle_todos')
+// if (error) console.error(error)
+// else console.log(data)
