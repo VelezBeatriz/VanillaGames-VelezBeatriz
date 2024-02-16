@@ -2,7 +2,7 @@ import { enrutador } from './enrutador'
 import { ls } from './funciones'
 import { menuRol, menuUsuario } from './menus'
 import { editarPerfil } from './editPerfil'
-
+import { User } from '../bd/user'
 export const header = {
   template: // html
   `
@@ -98,12 +98,14 @@ export const header = {
     } catch (error) {
       console.log('El usuario no está registrado y no tiene menú de usuario')
     }
-
     // Cerrar sesión
     // Capturamos clic sobre el item de cerrar sesión
     document.querySelector('header').addEventListener('click', (e) => {
       if (e.target.classList.contains('cerrarSesion')) {
         e.preventDefault()
+
+        // Cerramos sesión en la bd
+        User.logout()
         // Borramos el localstorage
         ls.setUsuario('')
         // Cargamos la pagina home
