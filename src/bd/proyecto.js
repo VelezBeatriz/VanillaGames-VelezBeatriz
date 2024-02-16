@@ -56,7 +56,7 @@ export class Proyectos {
       .from('proyectos')
       .select('*')
       .eq('id', id) // Filtra por el ID especificado
-      .single() // Espera un solo resultado
+      .maybeSingle() // Espera un solo resultado
 
     // Manejo de errores
     if (error) {
@@ -74,8 +74,7 @@ export class Proyectos {
       .from('proyectos')
       .select('*')
       .eq('user_id', id) // Filtra por el ID de usuario especificado
-      .single()
-
+      .maybeSingle()
     // Manejo de errores
     if (error) {
       throw new Error(error.message)

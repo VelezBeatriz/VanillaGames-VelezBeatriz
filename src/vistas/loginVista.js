@@ -1,6 +1,7 @@
 import { perfiles } from '../bd/datosPruebas'
 import { ls } from '../components/funciones'
 import { header } from '../components/header'
+import { supabase } from '../bd/supabase.js'
 
 export default {
   template: // html
@@ -78,34 +79,55 @@ export default {
       const email = formulario.email.value
       const pass = formulario.password.value
 
-      // buscamos el indice del email en el array perfiles
-      const indexUser = perfiles.findIndex((user) => user.email === email) // 1
-      // Si encuentra un usuario
-      if (indexUser > 0) {
-        // Si la contraseña es correcta
-        if (perfiles[indexUser].contraseña === pass) {
-          console.log('¡login correcto!')
-          const usuario = {
-            nombre: perfiles[indexUser].nombre,
-            apellidos: perfiles[indexUser].apellidos,
-            email: perfiles[indexUser].email,
-            rol: perfiles[indexUser].rol,
-            avatar: perfiles[indexUser].avatar,
-            user_id: perfiles[indexUser].user_id
+      // Probamos a logearnos
+      const login = async () => {
+        try {
+          // USER LOGIN
+          const { data, error } = await supabase.auth.signInWithPassword({
+            email: 'velezsanchezbeatriz@fpllefia.com',
+            password: 'aA123456789!'
+          })
+          console.log('login', data)
+        } catch (error) {
+          console.log(error)
+        }
+        return data
+      }
+      console.log('Datos usuario', login)
+      if (login === null) {
+        // buscamos el indice del email en el array perfiles
+        const indexUser = perfiles.findIndex((user) => user.email === email) // 1
+        // Si encuentra un usuario
+        if (indexUser > 0) {
+          // Si la contraseña es correcta
+          if (perfiles[indexUser].contraseña === pass) {
+            console.log('¡login correcto!')
+            const usuario = {
+              nombre: perfiles[indexUser].nombre,
+              apellidos: perfiles[indexUser].apellidos,
+              email: perfiles[indexUser].email,
+              rol: perfiles[indexUser].rol,
+              avatar: perfiles[indexUser].avatar,
+              user_id: perfiles[indexUser].user_id
+            }
+            // Guardamos datos de usaurio en localstorage
+            ls.setUsuario(usuario)
+            // Cargamos página home
+            window.location = '#/proyectos'
+            // Actualizamos el header para que se muestren los menús que corresponden al rol
+            header.script()
+          } else {
+            console.log('La contraseña no corresponde')
+            alert('la contraseña no es correcta')
           }
-          // Guardamos datos de usaurio en localstorage
-          ls.setUsuario(usuario)
-          // Cargamos página home
-          window.location = '#/proyectos'
-          // Actualizamos el header para que se muestren los menús que corresponden al rol
-          header.script()
         } else {
-          console.log('La contraseña no corresponde')
-          alert('la contraseña no es correcta')
+          console.log('El usuario no existe')
+          alert('El usuario no existe')
         }
       } else {
-        console.log('El usuario no existe')
-        alert('El usuario no existe')
+        window.location = '#/proyectos'
+        // Actualizamos el header para que se muestren los menús que corresponden al rol
+        header.script()
       }
     }
   }
