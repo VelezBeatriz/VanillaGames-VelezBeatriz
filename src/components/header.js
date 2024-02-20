@@ -2,7 +2,7 @@ import { enrutador } from './enrutador'
 import { ls } from './funciones'
 import { menuRol, menuUsuario } from './menus'
 import { editarPerfil } from './editPerfil'
-import { User } from '../bd/user'
+// import { User } from '../bd/user'
 export const header = {
   template: // html
   `
